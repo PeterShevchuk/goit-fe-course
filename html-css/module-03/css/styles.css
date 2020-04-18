@@ -1,3 +1,30 @@
 body {
-  font-family: "Playfair Display";
+  color: #626262;
+  font-family: Playfair Display;
+  width: 960px;
+}
+
+li {
+  display: inline-block;
+}
+
+.stat {
+  display: inline-block;
+  width: 420px;
+}
+
+.pidpus {
+  font-family: MyriadPro;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+
+a {
+  color: #626262;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #03a9f4;
 }
