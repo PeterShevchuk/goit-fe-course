@@ -1,7 +1,8 @@
 body {
   color: #626262;
-  font-family: Playfair Display;
-  width: 960px;
+  font-family: PlayfairDisplay Regular;
+  width: 1000px;
+  margin: auto;
 }
 
 li {
@@ -11,20 +12,62 @@ li {
 .stat {
   display: inline-block;
   width: 420px;
+  margin: 20px;
 }
 
 .pidpus {
-  font-family: MyriadPro;
+  font-family: "Myriad Pro";
   text-transform: uppercase;
   color: #b4ad9e;
+  font-size: 14px;
 }
 
-a {
+.menu {
+  padding: auto;
+  text-align: center;
+}
+
+.menu li {
+  margin: 60px;
+}
+
+.menu a {
   color: #626262;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 14px;
 }
 
-a:hover {
+.menu a:hover {
   color: #03a9f4;
+}
+
+.Text1 {
+  font-size: 30px;
+}
+
+.Text2 {
+  font-size: 14px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+
+button {
+  font-size: 20px;
+  color: #626262;
+  font-family: PlayfairDisplay Regular;
+  padding: 15px 25px;
+  background-color: white;
+  border: 1px solid #626262;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
