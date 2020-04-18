@@ -12,14 +12,14 @@ ul {
   padding: 0px;
 }
 
-.menu .logo {
+nav .logo {
   width: 78px;
   display: inline-block;
   float: left;
   text-align: left;
   margin: 0 0 0 15px;
 }
-.menu {
+nav {
   width: 100%;
   float: right;
   text-align: right;
@@ -27,7 +27,7 @@ ul {
   margin: 20px 0 100px 0;
 }
 
-.menu a {
+nav a {
   margin: 0px 20px 0px 20px;
   color: #0f0101;
   font-family: Open Sans Bold;
@@ -36,7 +36,7 @@ ul {
   font-size: 14px;
 }
 
-.menu a:hover {
+nav a:hover {
   color: #1abc9c;
 }
 
