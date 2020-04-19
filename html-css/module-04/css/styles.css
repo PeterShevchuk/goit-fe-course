@@ -154,7 +154,11 @@ nav a:focus {
   margin: 0;
 }
 .news .line {
-  margin: 10px auto 20px 0;
+  margin: 11px auto 30px 0;
+  border: 2px solid #1abc9c;
+}
+.news img {
+  margin-bottom: 10px;
 }
 .news .Text3 {
   font-family: Open Sans Semibold;
@@ -167,12 +171,13 @@ button {
   display: block;
   font-size: 20px;
   color: white;
-  font-family: PlayfairDisplay Regular;
+  font-family: Open Sans;
+  font-weight: Light;
   padding: 15px 25px;
   background-color: #4ec6ab;
   border: 1px solid #4ec6ab;
   border-radius: 3px;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
 }
 button:hover {
   background-color: #7fd9c7;
