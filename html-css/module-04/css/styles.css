@@ -7,58 +7,61 @@ body {
 
 li {
   display: inline-block;
+  list-style-type: none;
 }
 ul {
   padding: 0px;
 }
-
-nav .logo {
-  width: 78px;
-  display: inline-block;
-  float: left;
-  text-align: left;
-  margin: 0 0 0 15px;
+h1 {
+  margin: 0px;
 }
 nav {
   width: 100%;
   float: right;
   text-align: right;
   display: inline-block;
-  margin: 20px 0 100px 0;
+  margin: 20px 15px 100px 115px;
 }
 
 nav a {
-  margin: 0px 20px 0px 20px;
+  margin-right: 20px;
   color: #0f0101;
   font-family: Open Sans Bold;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
 }
-
 nav a:hover {
   color: #1abc9c;
 }
-
+nav a:focus {
+  color: #7fd9c7;
+}
+.logo {
+  display: inline-block;
+  float: left;
+  margin-left: 30px;
+}
 .title {
   font-size: 48px;
   font-style: Black;
   text-align: center;
-  margin: 0 0 40px 0;
+}
+.title::selection {
+  color: #7fd9c7;
 }
 .line {
   width: 160px;
   border: 3px solid #1abc9c;
   display: block;
-  margin: 0 auto 0 auto;
+  margin: 50px auto 50px auto;
 }
-.stat {
-  margin: 100px 0 100px 0;
-}
+
 .stat li {
-  display: inline-block;
+  display: list-item;
   width: 255px;
   margin: 15px;
+  float: left;
 }
 .Text1 {
   width: 180px;
@@ -92,9 +95,6 @@ nav a:hover {
 .stat a:hover > .Text1 {
   background-color: #1abc9c;
 }
-.news {
-  margin-top: 100px;
-}
 .news li {
   width: 345px;
   margin: 15px;
@@ -123,4 +123,10 @@ button {
 button:hover {
   background-color: #7fd9c7;
   border: 1px solid #7fd9c7;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
 }
