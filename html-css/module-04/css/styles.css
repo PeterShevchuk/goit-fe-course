@@ -56,9 +56,7 @@ nav a:focus {
   text-align: center;
   width: 100%;
   margin-top: 112px;
-}
-.title:last-child {
-  margin-top: 100px;
+  text-transform: uppercase;
 }
 .title::selection {
   color: #7fd9c7;
@@ -92,28 +90,28 @@ nav a:focus {
   background-repeat: no-repeat;
 }
 .s1::before {
-  background-image: url("../img/1.png");
+  background-image: url("../img/stat/1.png");
 }
 .s2::before {
-  background-image: url("../img/2.png");
+  background-image: url("../img/stat/2.png");
 }
 .s3::before {
-  background-image: url("../img/3.png");
+  background-image: url("../img/stat/3.png");
 }
 .s4::before {
-  background-image: url("../img/4.png");
+  background-image: url("../img/stat/4.png");
 }
 .s5::before {
-  background-image: url("../img/5.png");
+  background-image: url("../img/stat/5.png");
 }
 .s6::before {
-  background-image: url("../img/6.png");
+  background-image: url("../img/stat/6.png");
 }
 .s7::before {
-  background-image: url("../img/7.png");
+  background-image: url("../img/stat/7.png");
 }
 .s8::before {
-  background-image: url("../img/8.png");
+  background-image: url("../img/stat/8.png");
 }
 .Text1 {
   width: 180px;
