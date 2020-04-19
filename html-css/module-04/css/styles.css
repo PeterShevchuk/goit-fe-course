@@ -1,7 +1,7 @@
 body {
   color: #626262;
   font-family: Open Sans Regular;
-  width: 1160px;
+  width: 1110px;
   margin: auto;
 }
 
@@ -16,20 +16,24 @@ h1 {
   margin: 0px;
 }
 nav {
-  width: 100%;
+  width: 1110px;
   float: right;
   text-align: right;
   display: inline-block;
-  margin: 20px 15px 100px 115px;
+  margin-top: 20px;
 }
 
 nav a {
-  margin-right: 20px;
+  margin: 0 20px 0 0;
   color: #0f0101;
-  font-family: Open Sans Bold;
+  font-family: Open Sans;
+  font-weight: bolder;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
+}
+nav a:last-child {
+  margin: 0;
 }
 nav a:hover {
   color: #1abc9c;
@@ -38,14 +42,23 @@ nav a:focus {
   color: #7fd9c7;
 }
 .logo {
-  display: inline-block;
+  content: "";
+  display: block;
+  height: 21px;
+  width: 78px;
   float: left;
-  margin-left: 30px;
+  background: white url("../img/logo.png") no-repeat center;
 }
 .title {
   font-size: 48px;
-  font-style: Black;
+  font-weight: bolder;
+  display: inline-block;
   text-align: center;
+  width: 100%;
+  margin-top: 112px;
+}
+.title:last-child {
+  margin-top: 100px;
 }
 .title::selection {
   color: #7fd9c7;
@@ -60,13 +73,51 @@ nav a:focus {
 .stat li {
   display: list-item;
   width: 255px;
-  margin: 15px;
+  margin-right: 30px;
   float: left;
+}
+.stat li:nth-child(-n + 4) {
+  margin-bottom: 30px;
+}
+.stat li:nth-child(4n) {
+  margin: 0;
+}
+.stat li a::before {
+  content: "";
+  display: block;
+  height: 282px;
+  width: 255px;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.s1::before {
+  background-image: url("../img/1.png");
+}
+.s2::before {
+  background-image: url("../img/2.png");
+}
+.s3::before {
+  background-image: url("../img/3.png");
+}
+.s4::before {
+  background-image: url("../img/4.png");
+}
+.s5::before {
+  background-image: url("../img/5.png");
+}
+.s6::before {
+  background-image: url("../img/6.png");
+}
+.s7::before {
+  background-image: url("../img/7.png");
+}
+.s8::before {
+  background-image: url("../img/8.png");
 }
 .Text1 {
   width: 180px;
   padding: 10px;
-  margin-top: -5px;
   font-size: 18px;
   background-color: #323232;
   color: white;
@@ -79,7 +130,6 @@ nav a:focus {
 .Text2 {
   width: 35px;
   padding: 10px;
-  margin-top: -5px;
   text-align: center;
   font-size: 18px;
   float: right;
@@ -97,7 +147,11 @@ nav a:focus {
 }
 .news li {
   width: 345px;
-  margin: 15px;
+  margin: 0 30px 30px 0;
+  float: left;
+}
+.news li:last-child {
+  margin: 0;
 }
 .news .line {
   margin: 10px auto 20px 0;
