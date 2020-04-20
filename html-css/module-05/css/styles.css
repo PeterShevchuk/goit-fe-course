@@ -13,8 +13,9 @@ body {
 .header {
   width: 100%;
   background-color: white;
-  position: relative;
+  position: fixed;
   margin: auto;
+  z-index: 1;
 }
 .nav,
 .content {
