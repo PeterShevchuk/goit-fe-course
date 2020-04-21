@@ -41,13 +41,18 @@ nav a:hover {
 nav a:focus {
   color: #7fd9c7;
 }
-.logo {
+nav a:first-child {
   content: "";
-  display: block;
-  height: 21px;
-  width: 78px;
+  display: table-header-group;
   float: left;
-  background: white url("../img/logo.png") no-repeat center;
+  font-weight: lighter;
+  font-family: Roboto;
+  font-size: 30px;
+  color: #555252;
+}
+nav a:first-child::first-letter {
+  font-weight: bolder;
+  color: #1abc9c;
 }
 .title {
   font-size: 48px;
@@ -80,6 +85,9 @@ nav a:focus {
 }
 .stat li:nth-child(4n) {
   margin: 0;
+}
+.stat img {
+  margin-bottom: -5px;
 }
 .Text1 {
   width: 180px;
