@@ -1,4 +1,4 @@
-body {
+.wrapper {
   color: #626262;
   font-family: Open Sans Regular;
   width: 1110px;
@@ -9,10 +9,11 @@ li {
   display: inline-block;
   list-style-type: none;
 }
-ul {
+ul,
+li,
+h1,
+img {
   padding: 0px;
-}
-h1 {
   margin: 0px;
 }
 nav {
@@ -60,10 +61,11 @@ nav a:focus {
 .title::selection {
   color: #7fd9c7;
 }
-.line {
+.line::after {
   width: 160px;
   border: 3px solid #1abc9c;
   display: block;
+  content: "";
   margin: 50px auto 50px auto;
 }
 
@@ -78,39 +80,6 @@ nav a:focus {
 }
 .stat li:nth-child(4n) {
   margin: 0;
-}
-.stat li a::before {
-  content: "";
-  display: block;
-  height: 282px;
-  width: 255px;
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.s1::before {
-  background-image: url("../img/stat/1.png");
-}
-.s2::before {
-  background-image: url("../img/stat/2.png");
-}
-.s3::before {
-  background-image: url("../img/stat/3.png");
-}
-.s4::before {
-  background-image: url("../img/stat/4.png");
-}
-.s5::before {
-  background-image: url("../img/stat/5.png");
-}
-.s6::before {
-  background-image: url("../img/stat/6.png");
-}
-.s7::before {
-  background-image: url("../img/stat/7.png");
-}
-.s8::before {
-  background-image: url("../img/stat/8.png");
 }
 .Text1 {
   width: 180px;
