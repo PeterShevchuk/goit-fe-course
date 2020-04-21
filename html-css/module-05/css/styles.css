@@ -21,6 +21,7 @@ body {
 .content {
   width: 1110px;
   margin: auto;
+  display: table;
 }
 li {
   display: inline-block;
@@ -31,7 +32,6 @@ ul {
 }
 .nav {
   text-align: right;
-  display: inline-block;
   padding: 20px 0 20px 0;
 }
 
@@ -128,28 +128,40 @@ ul {
 .stat li:nth-child(4) {
   margin: 0;
 }
-.stat li a::before {
-  content: "";
+.stat li a {
+  min-height: 322px;
   display: block;
-  height: 282px;
-  width: 255px;
   background-color: white;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }
-.s1::before {
-  background-image: url("../img/stat/1.png");
+.stat a:nth-child(1) {
+  background-image: url("../img/content/1.png");
 }
 .s2::before {
-  background-image: url("../img/stat/2.png");
+  background-image: url("../img/content/2.png");
 }
 .s3::before {
-  background-image: url("../img/stat/3.png");
+  background-image: url("../img/content/3.png");
 }
 .s4::before {
-  background-image: url("../img/stat/4.png");
+  background-image: url("../img/content/4.png");
 }
 
+.Buttons {
+  margin: 0 10px 10px 10px;
+  padding: 80px 16px 80px 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+}
+.Buttons p {
+  width: 25px;
+  height: 25px;
+  border-radius: 1px;
+  border-color: white;
+  background-image: url("../img/icons/heart.png") no-repeat center;
+  margin-right: 10px;
+}
 .Text1 {
   width: 180px;
   padding: 10px;
@@ -160,6 +172,7 @@ ul {
   font-family: Roboto Black;
   text-transform: uppercase;
   text-decoration: none;
+  bottom: 0px;
 }
 
 .Text2 {
@@ -179,4 +192,20 @@ ul {
 }
 .stat a:hover > .Text1 {
   background-color: #1abc9c;
+}
+.footer {
+  width: 100%;
+  background-color: #323232;
+  margin: auto;
+  padding: 30px;
+  margin-top: 100px;
+}
+.footer div {
+  text-align: center;
+  font-size: 16px;
+  font-family: Open Sans Regular;
+  color: white;
+}
+.footer span {
+  color: #409989;
 }
