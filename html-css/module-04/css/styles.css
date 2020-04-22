@@ -86,9 +86,6 @@ nav a:first-child::first-letter {
 .stat li:nth-child(4n) {
   margin: 0;
 }
-.stat img {
-  margin-bottom: -5px;
-}
 .Text1 {
   width: 180px;
   padding: 10px;
