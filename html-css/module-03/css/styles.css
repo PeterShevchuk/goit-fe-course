@@ -3,6 +3,7 @@
   font-family: PlayfairDisplay Regular;
   width: 905px;
   margin: auto;
+  padding-top: 77px;
 }
 
 li {
@@ -22,18 +23,22 @@ li {
 .stat:nth-child(even) {
   margin: 0 0 135px 0;
 }
+.stat:nth-child(n + 5) {
+  margin-bottom: 60px;
+}
 
 .pidpus {
   font-family: "Myriad Pro";
   text-transform: uppercase;
   color: #b4ad9e;
   font-size: 14px;
+  margin: 33px 0;
 }
 
 .menu {
   margin: auto;
-  padding: 60px;
   text-align: center;
+  margin-bottom: 103px;
 }
 .menu li {
   margin-right: 120px;
