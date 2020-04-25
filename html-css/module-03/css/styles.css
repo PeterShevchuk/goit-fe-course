@@ -3,7 +3,7 @@
   font-family: PlayfairDisplay Regular;
   width: 905px;
   margin: auto;
-  padding-top: 77px;
+  padding: 77px 0 71px 0;
 }
 
 li {
@@ -85,5 +85,4 @@ button {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-bottom: 20px;
 }
