@@ -1,9 +1,10 @@
 .wrapper {
   color: #626262;
-  font-family: PlayfairDisplay Regular;
+  font-family: Playfair Display Regular;
   width: 905px;
   margin: auto;
   padding: 77px 0 71px 0;
+  font-size: 14px;
 }
 
 li {
@@ -15,20 +16,8 @@ li {
   padding: 0;
 }
 
-.stat {
-  display: inline-block;
-  width: 420px;
-  margin: 0 60px 135px 0;
-}
-.stat:nth-child(even) {
-  margin: 0 0 135px 0;
-}
-.stat:nth-child(n + 5) {
-  margin-bottom: 60px;
-}
-
 .pidpus {
-  font-family: "Myriad Pro";
+  font-family: Myriad Pro;
   text-transform: uppercase;
   color: #b4ad9e;
   font-size: 14px;
@@ -57,6 +46,17 @@ li {
   color: #03a9f4;
 }
 
+.stat {
+  display: inline-block;
+  width: 420px;
+  margin: 0 60px 135px 0;
+}
+.stat:nth-child(even) {
+  margin: 0 0 135px 0;
+}
+.stat:nth-child(n + 5) {
+  margin-bottom: 60px;
+}
 .Text1 {
   font-size: 30px;
 }
@@ -78,7 +78,7 @@ li {
 button {
   font-size: 20px;
   color: #626262;
-  font-family: PlayfairDisplay Regular;
+  font-family: Playfair Display Regular;
   padding: 15px 25px;
   background-color: white;
   border: 1px solid #626262;
