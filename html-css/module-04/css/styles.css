@@ -9,6 +9,8 @@
   font-weight: regular;
   width: 1110px;
   margin: auto;
+  padding: 38px 0 82px 0;
+  font-size: 14px;
 }
 
 li {
@@ -20,7 +22,6 @@ nav {
   width: 1110px;
   text-align: right;
   display: inline-block;
-  margin-top: 20px;
 }
 
 nav a {
@@ -31,6 +32,7 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
+  line-height: 11px;
 }
 nav a:last-child {
   margin: 0;
@@ -42,16 +44,14 @@ nav a:focus {
   color: #7fd9c7;
 }
 nav a:first-child {
-  content: "";
-  display: table-header-group;
   float: left;
-  font-weight: lighter;
-  font-family: Roboto;
+  font-weight: 300;
+  font-family: "Roboto";
   font-size: 30px;
   color: #555252;
 }
 nav a:first-child::first-letter {
-  font-weight: bolder;
+  font-weight: 900;
   color: #1abc9c;
 }
 .title {
@@ -66,7 +66,7 @@ nav a:first-child::first-letter {
 .title::selection {
   color: #7fd9c7;
 }
-.line::after {
+.title::after {
   width: 160px;
   border: 3px solid #1abc9c;
   display: block;
