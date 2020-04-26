@@ -1,9 +1,10 @@
 .wrapper {
   color: #626262;
-  font-family: Playfair Display Regular;
-  width: 905px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  width: 904px;
   margin: auto;
-  padding: 77px 0 71px 0;
+  padding-top: 77px;
   font-size: 14px;
 }
 
@@ -11,7 +12,8 @@ li {
   display: inline-block;
 }
 ul,
-li {
+li,
+h2 {
   margin: 0;
   padding: 0;
 }
@@ -45,25 +47,27 @@ li {
 .menu a:hover {
   color: #03a9f4;
 }
-
 .stat {
+  margin-bottom: 60px;
+}
+.stat li {
   display: inline-block;
   width: 420px;
   margin: 0 60px 135px 0;
 }
-.stat:nth-child(even) {
+.stat li:nth-child(even) {
   margin: 0 0 135px 0;
 }
-.stat:nth-child(n + 5) {
-  margin-bottom: 60px;
+.stat li:nth-child(n + 5) {
+  margin-bottom: 0px;
 }
 .Text1 {
   font-size: 30px;
+  font-weight: 400;
 }
 
 .Text2 {
   font-size: 14px;
-
   overflow: hidden;
   text-overflow: ellipsis;
   display: -moz-box;
@@ -78,8 +82,10 @@ li {
 button {
   font-size: 20px;
   color: #626262;
-  font-family: Playfair Display Regular;
+  font-family: "Playfair Display", serif;
+  font-weight: Regular;
   padding: 15px 25px;
+  margin-bottom: 70px;
   background-color: white;
   border: 1px solid #626262;
   position: relative;
