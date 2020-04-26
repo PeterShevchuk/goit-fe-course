@@ -2,7 +2,7 @@
   color: #626262;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  width: 903px;
+  width: 904px;
   margin: auto;
   padding-top: 77px;
   font-size: 14px;
@@ -11,7 +11,10 @@
 li {
   display: inline-block;
 }
-* {
+ul,
+li,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
@@ -58,9 +61,6 @@ li {
 }
 .stat li:nth-child(n + 5) {
   margin-bottom: 0px;
-}
-.stat img {
-  display: block;
 }
 .Text1 {
   font-size: 30px;
