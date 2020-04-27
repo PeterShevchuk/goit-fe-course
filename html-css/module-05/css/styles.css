@@ -171,7 +171,7 @@ nav a:first-child::first-letter {
 .stat a:hover > .Text1 {
   background-color: #1abc9c;
 }
-.stat a:hover > .socials {
+.stat span:hover > .socials {
   opacity: 1;
 }
 .socials {
@@ -184,29 +184,30 @@ nav a:first-child::first-letter {
   padding: 58px 34px 58px 33px;
   opacity: 0;
 }
-.socials p {
+.socials a {
   width: 48px;
   border: 1px solid #ffffff;
   float: left;
   margin-bottom: 7px;
   margin-right: 7px;
+  text-decoration: none;
 }
-.socials p:nth-child(1) {
+.socials a:nth-child(1) {
   background: url("../img/icons/heart.png") no-repeat center center;
   height: 48px;
 }
-.socials p:nth-child(2) {
+.socials a:nth-child(2) {
   background: url("../img/icons/mix.png") no-repeat center center;
   background-color: #1abc9c;
   border-color: #1abc9c;
   height: 48px;
 }
-.socials p:nth-child(3) {
+.socials a:nth-child(3) {
   background: url("../img/icons/clock.png") no-repeat center center;
   height: 48px;
   margin-right: 0px;
 }
-.socials p:nth-child(4) {
+.socials a:nth-child(4) {
   background: #323232 url("../img/icons/trolley.png") no-repeat 12px center;
   text-align: right;
   width: 132px;
