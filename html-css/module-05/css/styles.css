@@ -14,6 +14,9 @@
   font-size: 14px;
   background-color: #e9f0fd;
 }
+a {
+  text-decoration: none;
+}
 li {
   list-style-type: none;
 }
@@ -35,8 +38,6 @@ nav a {
   color: #0f0101;
   font-family: Open Sans;
   font-weight: bolder;
-  text-transform: uppercase;
-  text-decoration: none;
   font-size: 14px;
   line-height: 11px;
 }
@@ -149,7 +150,6 @@ nav a:first-child::first-letter {
   font-family: Roboto;
   font-weight: 900;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .Text2 {
@@ -163,7 +163,6 @@ nav a:first-child::first-letter {
   font-family: Roboto;
   font-weight: 900;
   text-transform: uppercase;
-  text-decoration: none;
 }
 .stat a:hover > .Text2 {
   background-color: #7fd9c7;
@@ -190,7 +189,6 @@ nav a:first-child::first-letter {
   float: left;
   margin-bottom: 7px;
   margin-right: 7px;
-  text-decoration: none;
 }
 .socials a:nth-child(1) {
   background: url("../img/icons/heart.png") no-repeat center center;
