@@ -171,7 +171,7 @@ nav a:first-child::first-letter {
 .stat a:hover > .Text1 {
   background-color: #1abc9c;
 }
-.stat span:hover > .socials {
+.stat li:hover > .socials {
   opacity: 1;
 }
 .socials {
