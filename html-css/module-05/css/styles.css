@@ -40,6 +40,7 @@ nav a {
   font-weight: bolder;
   font-size: 14px;
   line-height: 11px;
+  text-transform: uppercase;
 }
 nav a:last-child,
 nav a:first-child {
