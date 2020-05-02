@@ -71,7 +71,7 @@ nav a:first-child::first-letter {
 }
 .slider div {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 600px;
 }
 .slider ul {
@@ -109,7 +109,7 @@ nav a:first-child::first-letter {
 }
 .slider li:first-child:hover,
 .slider li:last-child:hover {
-  background-color: rgba(26, 188, 156, 0.8);
+  background-color: rgba(26, 188, 156, 0.7);
 }
 .title {
   font-size: 48px;
@@ -185,7 +185,6 @@ nav a:first-child::first-letter {
   opacity: 0;
 }
 .socials a {
-  width: 48px;
   border: 1px solid #ffffff;
   float: left;
   margin-bottom: 7px;
@@ -193,32 +192,33 @@ nav a:first-child::first-letter {
 }
 .socials a:nth-child(1) {
   background: url("../img/icons/heart.png") no-repeat center center;
+  width: 48px;
   height: 48px;
-}
-.socials a:nth-child(1):hover {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 .socials a:nth-child(2) {
   background: url("../img/icons/mix.png") no-repeat center center;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  width: 48px;
   height: 48px;
-}
-.socials a:nth-child(2):hover {
-  background-color: rgba(26, 188, 156, 0.8);
 }
 .socials a:nth-child(3) {
   background: url("../img/icons/clock.png") no-repeat center center;
+  width: 48px;
   height: 48px;
   margin-right: 0px;
 }
-.socials a:nth-child(3):hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.socials a:nth-child(4)::before {
+  content: "";
+  background-image: url("../img/icons/trolley.png");
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center;
+  background-size: contain;
+  margin-right: 15px;
 }
 .socials a:nth-child(4) {
-  background: #323232 url("../img/icons/trolley.png") no-repeat 12px center;
   text-align: right;
-  width: 132px;
   padding: 10px 15px;
   font-size: 14px;
   line-height: 32px;
@@ -227,9 +227,12 @@ nav a:first-child::first-letter {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0px;
+  min-width: 130px;
+  background-color: #323232;
 }
-.socials a:nth-child(4):hover {
-  background-color: rgba(50, 50, 50, 0.8);
+.socials a:hover {
+  background-color: rgb(26, 188, 156);
+  border-color: rgb(26, 188, 156);
 }
 footer {
   width: 100%;
