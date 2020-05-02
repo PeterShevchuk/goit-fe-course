@@ -219,7 +219,7 @@ nav a:first-child::first-letter {
 }
 .socials a:nth-child(4) {
   text-align: right;
-  padding: 10px 15px;
+  padding: 10px 16px;
   font-size: 14px;
   line-height: 32px;
   font-family: Open Sans;
