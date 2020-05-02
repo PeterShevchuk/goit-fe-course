@@ -174,6 +174,10 @@ nav a:first-child::first-letter {
 .stat li:hover > .socials {
   opacity: 1;
 }
+:root {
+  --socials-btn-wh: 48px;
+  --socials-btn-wh-img4: 25px;
+}
 .socials {
   content: "";
   position: absolute;
@@ -189,28 +193,24 @@ nav a:first-child::first-letter {
   float: left;
   margin-bottom: 7px;
   margin-right: 7px;
+  width: var(--socials-btn-wh);
+  height: var(--socials-btn-wh);
 }
 .socials a:nth-child(1) {
   background: url("../img/icons/heart.png") no-repeat center center;
-  width: 48px;
-  height: 48px;
 }
 .socials a:nth-child(2) {
   background: url("../img/icons/mix.png") no-repeat center center;
-  width: 48px;
-  height: 48px;
 }
 .socials a:nth-child(3) {
   background: url("../img/icons/clock.png") no-repeat center center;
-  width: 48px;
-  height: 48px;
   margin-right: 0px;
 }
 .socials a:nth-child(4)::before {
   content: "";
   background-image: url("../img/icons/trolley.png");
-  height: 25px;
-  width: 25px;
+  width: var(--socials-btn-wh-img4);
+  height: var(--socials-btn-wh-img4);
   display: inline-block;
   vertical-align: middle;
   background-position: center;
@@ -228,6 +228,7 @@ nav a:first-child::first-letter {
   color: #ffffff;
   margin: 0px;
   min-width: 130px;
+  height: auto;
   background-color: #323232;
 }
 .socials a:hover {
