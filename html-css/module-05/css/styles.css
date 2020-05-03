@@ -10,7 +10,6 @@
   font-family: "Roboto";
   font-weight: 400;
   width: 100%;
-  margin: auto;
   font-size: 14px;
   background-color: #e9f0fd;
 }
@@ -30,7 +29,6 @@ main section {
   margin: auto;
 }
 nav {
-  width: 1110px;
   text-align: right;
 }
 nav a {
@@ -65,50 +63,63 @@ nav a:first-child::first-letter {
 }
 .slider {
   height: 600px;
-  background: url("../img/background-slider.png") no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 90px;
+  background-color: rgb(0, 0, 0);
 }
-.slider div {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 600px;
-}
-.slider ul {
+.slider-w {
   width: 1110px;
+  position: relative;
   margin: auto;
 }
-.slider li {
-  float: left;
-  margin-top: 245px;
+.slider img {
+  opacity: 0.5;
 }
-.slider li:nth-child(2) {
-  width: 770px;
+.slider p {
+  width: 910px;
+  height: 600px;
+  position: absolute;
+  margin: auto;
+  left: 10%;
+  margin-top: 220px;
   font-size: 60px;
   font-weight: 900;
   color: white;
   padding: 0 65px;
   line-height: 82px;
+  z-index: 1;
 }
-.slider li p {
+.slider span {
   font-size: 24px;
   font-weight: 300;
   color: white;
   line-height: 54px;
 }
-.slider li:first-child {
+.prev,
+.next {
+  border: none;
   width: 105px;
   height: 105px;
-  background: #1abc9c url("../img/icons/left.png") no-repeat center center;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 245px;
+  z-index: 1;
+  background-color: #1abc9c;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.slider li:last-child {
-  width: 105px;
-  height: 105px;
-  background: #1abc9c url("../img/icons/right.png") no-repeat center center;
-  float: left;
+
+.prev {
+  background-image: url("../img/icons/prev.png");
 }
-.slider li:first-child:hover,
-.slider li:last-child:hover {
+.next {
+  background-image: url("../img/icons/next.png");
+  right: 0px;
+}
+.prev:hover,
+.next:hover {
   background-color: rgba(26, 188, 156, 0.7);
 }
 .title {
@@ -165,10 +176,10 @@ nav a:first-child::first-letter {
   font-weight: 900;
   text-transform: uppercase;
 }
-.stat a:hover > .Text2 {
+.stat li:hover > .Text2 {
   background-color: #7fd9c7;
 }
-.stat a:hover > .Text1 {
+.stat li:hover > .Text1 {
   background-color: #1abc9c;
 }
 .stat li:hover > .socials {
@@ -188,48 +199,41 @@ nav a:first-child::first-letter {
   padding: 58px 34px 58px 33px;
   opacity: 0;
 }
-.socials a {
+.heart,
+.clock,
+.mix,
+.cart {
   border: 1px solid #ffffff;
   float: left;
   margin-bottom: 7px;
   margin-right: 7px;
   width: var(--socials-btn-wh);
   height: var(--socials-btn-wh);
-}
-.socials a:nth-child(1) {
-  background: url("../img/icons/heart.png") no-repeat center center;
-}
-.socials a:nth-child(2) {
-  background: url("../img/icons/mix.png") no-repeat center center;
-}
-.socials a:nth-child(3) {
-  background: url("../img/icons/clock.png") no-repeat center center;
-  margin-right: 0px;
-}
-.socials a:nth-child(4)::before {
-  content: "";
-  background-image: url("../img/icons/trolley.png");
-  width: var(--socials-btn-wh-img4);
-  height: var(--socials-btn-wh-img4);
-  display: inline-block;
-  vertical-align: middle;
-  background-position: center;
-  background-size: contain;
-  margin-right: 15px;
-}
-.socials a:nth-child(4) {
-  text-align: right;
-  padding: 10px 16px;
   font-size: 14px;
   line-height: 32px;
   font-family: Open Sans;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: right;
   color: #ffffff;
+}
+.heart {
+  background: url("../img/icons/heart.png") no-repeat center center;
+}
+.mix {
+  background: url("../img/icons/mix.png") no-repeat center center;
+}
+.clock {
+  background: url("../img/icons/clock.png") no-repeat center center;
+  margin-right: 0px;
+}
+
+.cart {
+  padding: 7px 15px;
   margin: 0px;
-  min-width: 130px;
-  height: auto;
-  background-color: #323232;
+  min-width: 132px;
+  max-height: 35px;
+  background: #323232 url("../img/icons/trolley.png") no-repeat 15px center;
 }
 .socials a:hover {
   background-color: rgb(26, 188, 156);
@@ -238,8 +242,7 @@ nav a:first-child::first-letter {
 footer {
   width: 100%;
   background-color: #323232;
-  margin: auto;
-  padding: 30px;
+  padding: 30px 0px;
   text-align: center;
   color: #ffffff;
   font-family: Open Sans;
