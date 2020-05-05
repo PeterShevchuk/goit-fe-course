@@ -1,0 +1,200 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+*::selection {
+  color: #7fd9c7;
+}
+.wrapper {
+  color: #626262;
+  font-family: "Roboto";
+  font-weight: 400;
+  width: 1200px;
+  margin: auto;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding-top: 38px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+nav {
+  text-align: right;
+  margin-bottom: 105px;
+}
+nav a {
+  margin-right: 50px;
+  color: #95e1d3;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 11px;
+  text-transform: uppercase;
+  padding: 5px 0px;
+}
+nav a:last-child,
+nav a:first-child {
+  margin: 0;
+}
+nav a:hover {
+  color: #f38181;
+  border-bottom: 2px solid #f38181;
+}
+nav a:focus {
+  color: #7fd9c7;
+}
+nav a:first-child {
+  float: left;
+  font-weight: 300;
+  font-size: 30px;
+  color: #95e1d3;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: none;
+  border: none;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Montserrat;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.title p {
+  font-size: 24px;
+  font-family: Kaushan Script;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+.title::after {
+  width: 60px;
+  border: 1px solid #f38181;
+  display: block;
+  content: "";
+  margin: 35px auto 50px auto;
+}
+.stat {
+  margin-bottom: 102px;
+  display: table;
+}
+.stat li {
+  width: 255px;
+  margin-right: 30px;
+  float: left;
+}
+.stat li:nth-child(4n) {
+  margin: 0;
+}
+.stat img {
+  display: block;
+}
+.Text1 {
+  width: 180px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #323232;
+  color: white;
+  float: left;
+  font-family: Roboto;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.Text2 {
+  width: 35px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  float: right;
+  background-color: #8c8c8c;
+  color: white;
+  font-family: Roboto;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.stat li:hover > .Text2 {
+  background-color: #7fd9c7;
+}
+.stat li:hover > .Text1 {
+  background-color: #1abc9c;
+}
+.stat li:hover > .socials {
+  opacity: 1;
+}
+:root {
+  --socials-btn-wh: 48px;
+  --socials-btn-wh-img4: 25px;
+}
+.socials {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 186px;
+  width: 166px;
+  margin: 10px;
+  padding: 58px 34px 58px 33px;
+  opacity: 0;
+}
+.heart,
+.clock,
+.mix,
+.cart {
+  border: 1px solid #ffffff;
+  float: left;
+  margin-bottom: 7px;
+  margin-right: 7px;
+  width: var(--socials-btn-wh);
+  height: var(--socials-btn-wh);
+  font-size: 14px;
+  line-height: 32px;
+  font-family: Open Sans;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+}
+.heart {
+  background: url("../img/icons/heart.png") no-repeat center center;
+}
+.mix {
+  background: url("../img/icons/mix.png") no-repeat center center;
+}
+.clock {
+  background: url("../img/icons/clock.png") no-repeat center center;
+  margin-right: 0px;
+}
+
+.cart {
+  padding: 7px 15px;
+  margin: 0px;
+  min-width: 132px;
+  max-height: 35px;
+  background: #323232 url("../img/icons/trolley.png") no-repeat 15px center;
+}
+.socials a:hover {
+  background-color: rgb(26, 188, 156);
+  border-color: rgb(26, 188, 156);
+}
+footer {
+  width: 100%;
+  padding: 30px 0px;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 16px;
+  border-top: 2px solid #e5e5e5;
+}
+footer span {
+  color: #f38181;
+}
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
