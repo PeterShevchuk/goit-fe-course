@@ -3,7 +3,7 @@
   margin: 0px;
 }
 .wrapper {
-  color: #626262;
+  color: #999999;
   font-family: "Roboto";
   font-weight: 400;
   width: 1200px;
@@ -54,10 +54,14 @@ nav a:first-child {
   display: table;
 }
 .content li {
-  margin: 30px;
+  margin-right: 20px;
+  margin-bottom: 100px;
   float: left;
-  width: 340px;
+  width: 380px;
   line-height: 24px;
+}
+.content li:nth-child(3n-2) {
+  margin-right: 10px;
 }
 .content li p::first-line {
   margin-bottom: 5px;
@@ -70,7 +74,7 @@ nav a:first-child {
   height: 32px;
   float: left;
   display: inline-block;
-  margin: 5px 10px 10px 0;
+  margin: 10px 30px 30px 30px;
 }
 .content li:nth-child(1)::before {
   background-image: url("../img/icons/clock.png");
@@ -116,11 +120,12 @@ nav a:first-child {
 
 footer {
   width: 100%;
-  padding: 30px 0px;
+  padding: 20px 0px;
   text-align: left;
   font-family: Open Sans;
   font-size: 16px;
   border-top: 2px solid #e5e5e5;
+  color: #000000;
 }
 footer span {
   color: #f38181;
