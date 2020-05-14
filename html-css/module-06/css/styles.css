@@ -222,7 +222,11 @@ li {
   font-size: 15px;
 }
 
-footer {
+.footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 20px 0px;
   text-align: left;
@@ -231,8 +235,25 @@ footer {
   border-top: 2px solid #e5e5e5;
   color: #000000;
 }
-footer span {
+.footer span {
   color: #f38181;
+}
+.footer input[type="email"] {
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  color: #e7e7e7;
+  border-right: 0px;
+  font-style: italic;
+  font-size: 14px;
+}
+.footer button {
+  padding: 10px 25px;
+  background-color: #95e1d3;
+  border: 1px solid #95e1d3;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
 }
 .clearfix::after {
   display: table;
