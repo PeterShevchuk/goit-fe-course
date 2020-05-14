@@ -255,8 +255,3 @@ li {
   color: #ffffff;
   font-weight: bold;
 }
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
-}
