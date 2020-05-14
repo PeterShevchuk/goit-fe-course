@@ -43,6 +43,7 @@ li {
   color: #95e1d3;
   font-size: 14px;
   line-height: 11px;
+  transition: all 0.2s linear;
 }
 .nav a:hover {
   color: #f38181;
@@ -132,13 +133,19 @@ li {
   line-height: 29px;
 }
 
+.team {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 90px;
+}
 .socials {
   display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
-  width: 380px;
-  height: 470px;
+  min-width: 380px;
+  min-height: 470px;
   z-index: 2;
   opacity: 0;
   background: linear-gradient(
@@ -146,8 +153,7 @@ li {
     rgba(252, 227, 138, 0.9),
     rgba(156, 98, 98, 0.9)
   );
-  /* top: -10px; */
-  /* left: -10px; */
+  transition: transform 0.2s linear, opacity 0.2s linear;
 }
 .socials a {
   height: 57px;
@@ -156,6 +162,7 @@ li {
   background-position: center center;
   background-repeat: no-repeat;
   border-right: 1px solid #f9bd87;
+  transition: all 0.2s linear;
 }
 .socials a:hover {
   background-color: #95e1d3;
@@ -174,57 +181,22 @@ li {
   background-image: url("../img/icons/instagram.png");
   border: 0px;
 }
-
-.team {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 90px;
-}
-
-@keyframes AnImg {
-  from {
-    top: 0px;
-    left: 0px;
-  }
-  to {
-    top: -10px;
-    left: -10px;
-  }
-}
-@keyframes AnSoc {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.team li:hover > .img {
-  animation-name: AnImg;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
 .team li:hover > .socials {
-  animation-name: AnSoc;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+  opacity: 1;
+  transform: translate(-10px, -10px);
 }
-/* .team img:hover > {
-  animation-name: animationName;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-} */
 .team p {
   margin: 5px;
 }
-.team img {
+.team .img {
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+}
+.team li:hover > .img {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 #95e1d3;
 }
 .team .name {
   color: #000000;
