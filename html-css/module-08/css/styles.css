@@ -1,0 +1,165 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "Droid Serif"; /* назва одна */
+  src: url("../fonts/droidserifitalic.woff2"); /* різні файли */
+  font-weight: 400; /* різна вага/жирність */
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto Slab"; /* назва одна */
+  src: url("../fonts/Robotoslabregular.woff2"); /* різні файли */
+  font-weight: 400; /* різна вага/жирність */
+  font-style: Regular;
+}
+@font-face {
+  font-family: "Wisdom Script"; /* назва одна */
+  src: url("../fonts/WisdomScriptAI.woff2"); /* різні файли */
+  font-weight: 400; /* різна вага/жирність */
+  font-style: normal;
+}
+.wrapper {
+  color: #999999;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+}
+.top {
+  padding-top: 38px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.nav,
+.content,
+.forma div {
+  max-width: 940px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+.nav ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+.nav li {
+  margin-right: 5px;
+}
+.nav li:last-child {
+  margin: 0;
+}
+.nav a {
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  transition: all 0.2s linear;
+}
+.nav a:hover {
+  border: 2px solid #ffffff;
+}
+.logo {
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: none;
+  border: none;
+}
+.promo {
+  display: flex;
+  height: 635px;
+  justify-content: center;
+  align-items: center;
+}
+.promo section {
+  text-align: center;
+}
+.promo input {
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #ff4e50;
+  border-radius: 20px;
+  border: 0px;
+  font-weight: 500;
+}
+.title {
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.title p {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 60px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  line-height: 25px;
+}
+.content li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  width: 280px;
+  margin-right: 25px;
+}
+.content li:last-child {
+  margin: 0px;
+}
+.content li p::first-line {
+  margin-bottom: 15px;
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content li i {
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 3px solid #fed136;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+.content .basket {
+  background-image: url("../img/icons/Basket.png");
+}
+.content .laptop {
+  background-image: url("../img/icons/Laptop.png");
+}
+.content .locked {
+  background-image: url("../img/icons/Locked.png");
+}
