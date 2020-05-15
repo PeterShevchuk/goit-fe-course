@@ -103,22 +103,22 @@ li {
   margin: 10px 30px 30px 30px;
   background-image: url("../img/icons/clock.png");
 }
-.content li:nth-child(1) i {
+.content.clock {
   background-image: url("../img/icons/clock.png");
 }
-.content li:nth-child(2) i {
+.content .web {
   background-image: url("../img/icons/web.png");
 }
-.content li:nth-child(3) i {
+.content .computer {
   background-image: url("../img/icons/computer.png");
 }
-.content li:nth-child(4) i {
+.content .book {
   background-image: url("../img/icons/book.png");
 }
-.content li:nth-child(5) i {
+.content .home {
   background-image: url("../img/icons/home.png");
 }
-.content li:nth-child(6) i {
+.content .img {
   background-image: url("../img/icons/img.png");
 }
 .title {
