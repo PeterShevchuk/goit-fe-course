@@ -24,11 +24,15 @@
   color: #999999;
   font-family: "Montserrat";
   font-weight: 400;
-  width: 930px;
-  margin: auto;
   font-size: 14px;
   background-color: #ffffff;
   padding-top: 38px;
+}
+.nav,
+.content,
+.forma div {
+  width: 930px;
+  margin: auto;
 }
 a {
   text-decoration: none;
@@ -40,7 +44,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 105px;
+  margin-bottom: 100px;
   font-family: Montserrat;
   font-weight: 500;
 }
@@ -115,13 +119,13 @@ li {
   border-radius: 40px;
   margin-bottom: 20px;
 }
-.content li:nth-child(1) i {
+.content .basket {
   background-image: url("../img/icons/Basket.png");
 }
-.content li:nth-child(2) i {
+.content .laptop {
   background-image: url("../img/icons/Laptop.png");
 }
-.content li:nth-child(3) i {
+.content .locked {
   background-image: url("../img/icons/Locked.png");
 }
 .title {
@@ -144,28 +148,52 @@ li {
   color: #000000;
 }
 
-.footer {
+.forma {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 0px;
+  padding: 100px 0px;
   text-align: left;
   font-family: Open Sans;
   font-size: 16px;
   border-top: 2px solid #e5e5e5;
   color: #000000;
+  background: #222222 url("../img/bg.png") right center no-repeat;
 }
-.footer span {
-  color: #f38181;
+.forma .title p {
+  color: #ffffff;
 }
-.footer input[type="email"] {
-  padding: 10px;
-  border: 1px solid #e7e7e7;
-  color: #e7e7e7;
-  border-right: 0px;
-  font-style: italic;
+/* .contactus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+.contactus input,
+.contactus textarea {
+  padding: 15px 20px;
+  border: 0;
+  color: #c0c0c0;
   font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 0 20px 20px 0;
+}
+.contactus input[type="name"],
+.contactus input[type="email"],
+.contactus input[type="text"],
+.contactus textarea {
+  width: 415px;
+}
+.button {
+  text-align: center;
+}
+.button input {
+  min-width: 50px;
+  color: #ffffff;
+  background-color: #fed136;
 }
 .footer button {
   padding: 10px 25px;
