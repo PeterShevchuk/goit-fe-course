@@ -2,13 +2,31 @@
   padding: 0px;
   margin: 0px;
 }
+@font-face {
+  font-family: "Droid Serif"; /* назва одна */
+  src: url("../fonts/droidserifitalic.woff2"); /* різні файли */
+  font-weight: 400; /* різна вага/жирність */
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto Slab"; /* назва одна */
+  src: url("../fonts/Robotoslabregular.woff2"); /* різні файли */
+  font-weight: 400; /* різна вага/жирність */
+  font-style: Regular;
+}
+@font-face {
+  font-family: "Wisdom Script"; /* назва одна */
+  src: url("../fonts/WisdomScriptAI.woff2"); /* різні файли */
+  font-weight: 400; /* різна вага/жирність */
+  font-style: normal;
+}
 .wrapper {
   color: #999999;
-  font-family: "Roboto";
+  font-family: "Montserrat";
   font-weight: 400;
-  width: 1200px;
+  width: 930px;
   margin: auto;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #ffffff;
   padding-top: 38px;
 }
@@ -40,185 +58,90 @@ li {
 }
 .nav a {
   padding: 5px 0px;
-  color: #95e1d3;
+  color: #000000;
   font-size: 14px;
   line-height: 11px;
-  transition: all 0.2s linear;
+  transition: color 0.2s linear;
 }
 .nav a:hover {
-  color: #f38181;
-  border-bottom: 2px solid #f38181;
+  color: #fed136;
 }
 .logo {
-  font-size: 30px;
-  color: #95e1d3;
+  font-family: "Wisdom Script";
+  font-size: 26px;
+  color: #fed136;
   line-height: 14px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: none;
   border: none;
-  animation: Logos 0.7s linear;
-}
-
-@keyframes Logos {
-  0% {
-    opacity: 0;
-    transform: rotate(0deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(360deg);
-  }
 }
 .content {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 90px;
   justify-content: space-around;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  line-height: 25px;
 }
 .content li {
-  line-height: 24px;
-  width: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  width: 280px;
+  margin-right: 25px;
 }
-.content li:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 90px;
+.content li:last-child {
+  margin: 0px;
 }
 .content li p::first-line {
-  margin-bottom: 5px;
-  text-transform: uppercase;
+  margin-bottom: 15px;
   color: #000000;
-}
-.content li::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  float: left;
-  display: inline-block;
-  margin: 10px 30px 30px 30px;
-  background-image: url("../img/icons/clock.png");
-}
-.content li:nth-child(1)::before {
-  background-image: url("../img/icons/clock.png");
-}
-.content li:nth-child(2)::before {
-  background-image: url("../img/icons/web.png");
-}
-.content li:nth-child(3)::before {
-  background-image: url("../img/icons/computer.png");
-}
-.content li:nth-child(4)::before {
-  background-image: url("../img/icons/book.png");
-}
-.content li:nth-child(5)::before {
-  background-image: url("../img/icons/home.png");
-}
-.content li:nth-child(6)::before {
-  background-image: url("../img/icons/img.png");
-}
-.title {
-  font-size: 30px;
-  font-weight: 700;
   font-family: Montserrat;
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
-  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
 }
-.title p {
-  font-size: 24px;
-  font-family: Kaushan Script;
-  font-weight: 400;
-  text-transform: none;
-  margin-bottom: 10px;
-}
-.title::after {
-  width: 60px;
-  border: 1px solid #f38181;
-  display: block;
+.content li i {
   content: "";
-  margin: 35px auto 55px auto;
-}
-.title-text {
-  text-align: center;
-  margin-bottom: 80px;
-  font-size: 16px;
-  line-height: 29px;
-}
-
-.team {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 90px;
-}
-.socials {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  min-width: 380px;
-  min-height: 470px;
-  z-index: 2;
-  opacity: 0;
-  background: linear-gradient(
-    to bottom right,
-    rgba(252, 227, 138, 0.9),
-    rgba(156, 98, 98, 0.9)
-  );
-  transition: transform 0.2s linear, opacity 0.2s linear;
-}
-.socials a {
-  height: 57px;
-  width: 57px;
-  background-color: #fce38a;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding: 15px;
   background-position: center center;
   background-repeat: no-repeat;
-  border-right: 1px solid #f9bd87;
-  transition: all 0.2s linear;
-}
-.socials a:hover {
-  background-color: #95e1d3;
-  border-right: 1px solid #b9bcb3;
-}
-.socials a:nth-child(1) {
-  background-image: url("../img/icons/facebook.png");
-}
-.socials a:nth-child(2) {
-  background-image: url("../img/icons/twitter.png");
-}
-.socials a:nth-child(3) {
-  background-image: url("../img/icons/pinterest.png");
-}
-.socials a:nth-child(4) {
-  background-image: url("../img/icons/instagram.png");
-  border: 0px;
-}
-.team li:hover > .socials {
-  opacity: 1;
-  transform: translate(-10px, -10px);
-}
-.team p {
-  margin: 5px;
-}
-.team .img {
-  transition: transform 0.2s linear, box-shadow 0.2s linear;
+  border: 3px solid #fed136;
+  border-radius: 40px;
   margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
 }
-.team li:hover > .img {
-  transform: translate(-10px, -10px);
-  box-shadow: 10px 10px 0 #95e1d3;
+.content li:nth-child(1) i {
+  background-image: url("../img/icons/Basket.png");
 }
-.team .name {
-  color: #000000;
-  font-size: 14px;
-  font-family: Montserrat;
-  text-transform: uppercase;
+.content li:nth-child(2) i {
+  background-image: url("../img/icons/Laptop.png");
 }
-.team .prof {
-  font-family: Roboto;
+.content li:nth-child(3) i {
+  background-image: url("../img/icons/Locked.png");
+}
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Droid Serif";
   font-style: italic;
-  font-size: 15px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+  color: #a3a3a3;
+  margin-bottom: 65px;
+}
+.title p {
+  font-size: 40px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #000000;
 }
 
 .footer {
