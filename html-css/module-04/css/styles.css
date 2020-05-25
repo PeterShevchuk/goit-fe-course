@@ -82,6 +82,9 @@ nav a:first-child::first-letter {
   margin-right: 30px;
   float: left;
 }
+.stat a:first-child:hover > .stat li {
+  background-color: #7fd9c7;
+}
 .stat li:nth-child(-n + 4) {
   margin-bottom: 30px;
 }
@@ -91,11 +94,15 @@ nav a:first-child::first-letter {
 .stat img {
   display: block;
 }
-.Text1 {
+.text {
+  display: inline-block;
+  background-color: #323232;
+}
+
+.text p:first-child {
   width: 180px;
   padding: 10px;
   font-size: 18px;
-  background-color: #323232;
   color: white;
   float: left;
   font-family: Roboto;
@@ -104,23 +111,20 @@ nav a:first-child::first-letter {
   text-decoration: none;
 }
 
-.Text2 {
+.text p:last-child {
   width: 35px;
   padding: 10px;
   text-align: center;
   font-size: 18px;
   float: right;
-  background-color: #8c8c8c;
   color: white;
   font-family: Roboto;
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.4);
 }
-.stat a:hover > .Text2 {
-  background-color: #7fd9c7;
-}
-.stat a:hover > .Text1 {
+.stat li:hover .text {
   background-color: #1abc9c;
 }
 .news li {
