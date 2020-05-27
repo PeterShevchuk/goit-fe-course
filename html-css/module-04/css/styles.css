@@ -156,7 +156,6 @@ nav a:first-child::first-letter {
   margin: 10px 0px 30px 0px;
 }
 .Text4 {
-  font-size: 14px;
   line-height: 26px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -169,7 +168,7 @@ nav a:first-child::first-letter {
   line-clamp: 3;
   box-orient: vertical;
 }
-.news a {
+.news-button {
   display: inline-block;
   font-size: 20px;
   color: white;
@@ -179,13 +178,14 @@ nav a:first-child::first-letter {
   background-color: #4ec6ab;
   border: 0;
   border-radius: 3px;
-  margin-bottom: 80px;
   text-decoration: none;
 }
-.news a:hover {
+.news-button:hover {
   background-color: #7fd9c7;
 }
-
+.news-section {
+  margin-bottom: 80px;
+}
 .clearfix::after {
   display: table;
   content: "";
