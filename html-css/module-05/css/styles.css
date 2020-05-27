@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 *::selection {
   color: #7fd9c7;
@@ -152,52 +153,54 @@ nav a:first-child::first-letter {
 .stat img {
   display: block;
 }
-.Text1 {
-  width: 180px;
+.text {
+  display: inline-block;
+  background-color: #323232;
+}
+.text p:first-child {
+  width: 200px;
   padding: 10px;
   font-size: 18px;
-  background-color: #323232;
   color: white;
   float: left;
   font-family: Roboto;
   font-weight: 900;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.Text2 {
-  width: 35px;
+.text p:last-child {
+  width: 55px;
   padding: 10px;
   text-align: center;
   font-size: 18px;
   float: right;
-  background-color: #8c8c8c;
   color: white;
   font-family: Roboto;
   font-weight: 900;
   text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.4);
 }
-.stat li:hover > .Text2 {
-  background-color: #7fd9c7;
-}
-.stat li:hover > .Text1 {
+.stat li:hover .text {
   background-color: #1abc9c;
 }
-.stat li:hover > .socials {
+.stat li:hover .socials {
   opacity: 1;
 }
 :root {
   --socials-btn-wh: 48px;
-  --socials-btn-wh-img4: 25px;
+  --socials-btn-mar: 7px;
 }
 .socials {
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 186px;
-  width: 166px;
   margin: 10px;
-  padding: 58px 34px 58px 33px;
   opacity: 0;
+  width: 235px;
+  height: 300px;
+  padding: 58px 38px;
 }
 .heart,
 .clock,
@@ -205,8 +208,8 @@ nav a:first-child::first-letter {
 .cart {
   border: 1px solid #ffffff;
   float: left;
-  margin-bottom: 7px;
-  margin-right: 7px;
+  margin-bottom: var(--socials-btn-mar);
+  margin-right: var(--socials-btn-mar);
   width: var(--socials-btn-wh);
   height: var(--socials-btn-wh);
   font-size: 14px;
@@ -216,6 +219,7 @@ nav a:first-child::first-letter {
   text-transform: uppercase;
   text-align: right;
   color: #ffffff;
+  cursor: pointer;
 }
 .heart {
   background: url("../img/icons/heart.png") no-repeat center center;
@@ -229,13 +233,12 @@ nav a:first-child::first-letter {
 }
 
 .cart {
-  padding: 7px 15px;
-  margin: 0px;
-  min-width: 132px;
-  max-height: 35px;
+  min-width: calc(var(--socials-btn-wh) * 3 + var(--socials-btn-mar) * 2);
+  max-height: var(--socials-btn-wh);
   background: #323232 url("../img/icons/trolley.png") no-repeat 15px center;
+  padding: 6px 15px;
 }
-.socials a:hover {
+.socials button:hover {
   background-color: rgb(26, 188, 156);
   border-color: rgb(26, 188, 156);
 }
