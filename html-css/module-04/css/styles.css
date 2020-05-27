@@ -169,8 +169,8 @@ nav a:first-child::first-letter {
   line-clamp: 3;
   box-orient: vertical;
 }
-button {
-  display: block;
+.news a {
+  display: inline-block;
   font-size: 20px;
   color: white;
   font-family: Open Sans;
@@ -180,8 +180,9 @@ button {
   border: 0;
   border-radius: 3px;
   margin-bottom: 80px;
+  text-decoration: none;
 }
-button:hover {
+.news a:hover {
   background-color: #7fd9c7;
 }
 

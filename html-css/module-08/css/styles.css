@@ -129,11 +129,13 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   align-items: top;
+  flex-direction: column;
   width: 235px;
   /* margin-right: 25px; */
 }
-.content li p::first-line {
+.content li p:first-child {
   margin-bottom: 15px;
   color: #000000;
   font-family: Montserrat;

@@ -168,8 +168,8 @@ li {
   opacity: 0;
   background: linear-gradient(
     to bottom right,
-    rgba(252, 227, 138, 0.9),
-    rgba(156, 98, 98, 0.9)
+    rgba(252, 227, 138, 0.8),
+    rgba(156, 98, 98, 0.8)
   );
   transition: transform 0.2s linear, opacity 0.2s linear;
 }
