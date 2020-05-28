@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  .logo-two {
+    display: block;
+  }
+  .logo-one {
+    display: none;
+  }
+  .nav {
+    display: block;
+    margin-bottom: 105px;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .title p {
+    font-size: 30px;
+  }
+}
