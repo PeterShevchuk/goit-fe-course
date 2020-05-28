@@ -1,4 +1,13 @@
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .top {
+    padding: 38px 38px 0;
+  }
+  main {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 450px) {
   .logo-two {
     display: block;
   }
@@ -15,5 +24,8 @@
   }
   .title p {
     font-size: 30px;
+  }
+  .btn-find-two a {
+    padding: 10px 70px;
   }
 }
