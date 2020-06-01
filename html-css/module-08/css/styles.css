@@ -1,3 +1,5 @@
+/* ======================== BASE ================== */
+
 * {
   padding: 0px;
   margin: 0px;
@@ -21,14 +23,31 @@
   font-weight: 400; /* різна вага/жирність */
   font-style: normal;
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* ======================== BODY ================== */
 .wrapper {
+  display: flex;
+  flex-direction: column;
   color: #999999;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
+  flex-basis: 340px;
 }
+
+main {
+  text-align: center;
+}
+
+/* ======================== TOP ================== */
 .top {
-  padding-top: 38px;
+  padding: 38px 0;
   margin-bottom: 60px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../img/bg.png");
@@ -36,18 +55,8 @@
   background-position: top;
   background-size: cover;
 }
-.nav,
-.content,
-.forma div {
-  max-width: 940px;
-  margin: auto;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style-type: none;
-}
+
+/* ======================== NAV  ================== */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -76,13 +85,15 @@ li {
   transition: all 0.2s linear;
 }
 .nav a:hover {
-  border: 2px solid #ffffff;
+  border-color: #ffffff;
 }
+
+/* ======================== LOGO  ================== */
 .logo-one,
 .logo-two {
   font-size: 26px;
   color: #ffffff;
-  line-height: 15px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: none;
   border: none;
@@ -91,17 +102,15 @@ li {
   display: none;
   text-align: center;
 }
+
+/* ======================== PROMO  ================== */
 .promo {
-  display: flex;
   height: 635px;
-  justify-content: center;
-  align-items: center;
 }
 .promo section {
   text-align: center;
 }
-.btn-find,
-.btn-find-two a {
+.btn-find {
   padding: 10px 20px;
   color: #ffffff;
   background-color: rgb(255, 78, 80);
@@ -112,15 +121,8 @@ li {
 .btn-find:hover {
   background-color: rgba(255, 78, 80, 0.8);
 }
-.btn-find-two {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.btn-find-two a {
-  background-color: #fff;
-  color: rgb(255, 78, 80);
-  border: 2px solid rgb(255, 78, 80);
-}
+
+/* ======================== TEXT  ================== */
 .title {
   font-weight: 400;
   line-height: 50px;
@@ -142,11 +144,10 @@ li {
   font-family: Montserrat;
   color: #333333;
 }
+
+/* ======================== CONTENT  ================== */
 .content {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 90px;
-  justify-content: space-around;
   text-align: center;
   font-family: "Roboto Slab";
   font-size: 14px;
@@ -203,4 +204,20 @@ li {
 }
 .shape::after {
   background: #4e73db url(../img/icons/shape.png) no-repeat center center;
+}
+
+/* ======================== FOOTER BTN  ================== */
+.btn-find-two {
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: rgb(255, 78, 80);
+  border-radius: 20px;
+  border: 0px;
+  font-weight: 700;
+}
+
+.btn-find-two {
+  background-color: #fff;
+  color: rgb(255, 78, 80);
+  border: 2px solid rgb(255, 78, 80);
 }

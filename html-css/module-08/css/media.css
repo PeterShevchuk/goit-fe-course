@@ -1,13 +1,29 @@
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .top {
     padding: 38px 38px 0;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   main {
     padding: 0 40px;
   }
+  .top,
+  main {
+    flex-basis: 320px;
+  }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 1024px) {
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    min-width: 320px;
+    flex-direction: column;
+  }
   .logo-two {
     display: block;
   }
@@ -25,7 +41,11 @@
   .title p {
     font-size: 30px;
   }
-  .btn-find-two a {
-    padding: 10px 70px;
+  .btn-find-two {
+    width: 97%;
+  }
+  .btn-find-two,
+  .btn-find {
+    display: block;
   }
 }
