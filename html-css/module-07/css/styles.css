@@ -195,7 +195,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.getform label {
+.getform > div {
   display: flex;
   flex-direction: column;
 }
