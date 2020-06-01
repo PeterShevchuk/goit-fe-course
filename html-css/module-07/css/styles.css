@@ -71,12 +71,12 @@ header {
 .nav-li {
   margin-right: 50px;
   text-transform: uppercase;
+  padding: 5px 0px;
 }
 .nav-li:last-child {
   margin: 0;
 }
 .nav-li-a {
-  padding: 5px 0px;
   color: #000000;
   font-size: 14px;
   line-height: 11px;
@@ -116,7 +116,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   justify-content: center;
-  width: 280px;
+  flex-basis: 280px;
   margin-right: 25px;
 }
 .cont-li:last-child {
@@ -194,6 +194,7 @@ header {
 .getform {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .getform > div {
   display: flex;
@@ -213,10 +214,16 @@ header {
   text-transform: uppercase;
   border-radius: 4px;
   margin: 0 20px 20px 0;
-  width: 415px;
+  min-width: 415px;
+  transition: all 0.2s linear;
+}
+.getform-sub,
+.getform-text {
+  margin: 0px 20px 0px 0px;
 }
 .getform-text {
   min-height: 180px;
+  width: 100%;
 }
 .getform-btn {
   border-radius: 3px;
@@ -230,4 +237,32 @@ header {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+  transition: all 0.2s linear;
+}
+.getform-btn:hover {
+  background-color: rgba(254, 209, 54, 0.8);
+  cursor: pointer;
+}
+input::placeholder {
+  color: #bbbbbb;
+}
+.getform-name:focus,
+.getform-email:focus,
+.getform-sub:focus,
+.getform-text:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.getform-name:focus:invalid,
+.getform-email:focus:invalid,
+.getform-sub:focus:invalid,
+.getform-text:focus:invalid {
+  background: rgb(255, 221, 221);
+}
+.getform-name:focus:valid,
+.getform-email:focus:valid,
+.getform-sub:focus:valid,
+.getform-text:focus:valid {
+  background: rgb(221, 255, 221);
 }
