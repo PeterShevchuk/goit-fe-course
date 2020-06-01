@@ -51,36 +51,38 @@ li {
   max-width: 930px;
   margin: auto;
 }
+header {
+  margin-bottom: 100px;
+}
 
 /* ============= NAV ========== */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
   font-family: Montserrat;
   font-weight: 500;
 }
-.nav ul {
+.nav-ul {
   display: flex;
   padding: 0px;
   margin: 0px;
 }
-.nav li {
+.nav-li {
   margin-right: 50px;
   text-transform: uppercase;
 }
-.nav li:last-child {
+.nav-li:last-child {
   margin: 0;
 }
-.nav a {
+.nav-li-a {
   padding: 5px 0px;
   color: #000000;
   font-size: 14px;
   line-height: 11px;
   transition: color 0.2s linear;
 }
-.nav a:hover {
+.nav-li-a:hover {
   color: #fed136;
 }
 
@@ -96,6 +98,9 @@ li {
 }
 
 /* ============= CONTENT ========== */
+.main {
+  margin-bottom: 65px;
+}
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +111,7 @@ li {
   font-size: 14px;
   line-height: 25px;
 }
-.content li {
+.cont-li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -114,35 +119,37 @@ li {
   width: 280px;
   margin-right: 25px;
 }
-.content li:last-child {
+.cont-li:last-child {
   margin: 0px;
 }
-.content li p::first-line {
+.cont-text::first-line {
   margin-bottom: 15px;
   color: #000000;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
 }
-.content li i {
+.basket,
+.laptop,
+.locked {
   content: "";
   width: 40px;
   height: 40px;
   display: inline-block;
-  padding: 15px;
+  padding: 35px;
   background-position: center center;
   background-repeat: no-repeat;
   border: 3px solid #fed136;
   border-radius: 40px;
   margin-bottom: 20px;
 }
-.content .basket {
+.basket {
   background-image: url("../img/icons/Basket.png");
 }
-.content .laptop {
+.laptop {
   background-image: url("../img/icons/Laptop.png");
 }
-.content .locked {
+.locked {
   background-image: url("../img/icons/Locked.png");
 }
 
@@ -156,7 +163,7 @@ li {
   text-align: center;
   width: 100%;
   color: #a3a3a3;
-  margin-bottom: 65px;
+  margin-bottom: 81px;
 }
 .title p {
   font-size: 40px;
@@ -168,23 +175,35 @@ li {
 }
 
 /* ============= FORM ========== */
-.forma {
+.send-meesage {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 100px 0px;
-  text-align: left;
+  text-align: center;
   font-family: Open Sans;
   font-size: 16px;
   color: #000000;
   background: #222222 url("../img/bg.png") right center no-repeat;
 }
-.forma .title p {
+.send-meesage .title p {
   color: #ffffff;
 }
-.contactus input,
-.contactus textarea {
+
+.getform {
+  display: flex;
+  justify-content: space-between;
+}
+.getform label {
+  display: flex;
+  flex-direction: column;
+}
+
+.getform-name,
+.getform-email,
+.getform-sub,
+.getform-text {
   padding: 15px 20px;
   border: 0;
   color: #c0c0c0;
@@ -194,27 +213,21 @@ li {
   text-transform: uppercase;
   border-radius: 4px;
   margin: 0 20px 20px 0;
-}
-.contactus input[type="name"],
-.contactus input[type="email"],
-.contactus input[type="text"],
-.contactus textarea {
   width: 415px;
 }
-.button {
-  text-align: center;
+.getform-text {
+  min-height: 180px;
 }
-.button input {
-  min-width: 50px;
-  color: #ffffff;
-  background-color: #fed136;
-}
-.footer button {
-  padding: 10px 25px;
-  background-color: #95e1d3;
-  border: 1px solid #95e1d3;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
+.getform-btn {
+  border-radius: 3px;
+  border: 0;
+  background-color: rgb(254, 209, 54);
+  padding: 20px 40px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
   font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
 }

@@ -15,77 +15,65 @@
     <header>
       <nav class="nav">
         <div class="logo">Golden</div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="nav-ul">
+          <li class="nav-li"><a class="nav-li-a" href="#">Home</a></li>
+          <li class="nav-li"><a class="nav-li-a" href="#">Services</a></li>
+          <li class="nav-li"><a class="nav-li-a" href="#">Portfolio</a></li>
+          <li class="nav-li"><a class="nav-li-a" href="#">About</a></li>
+          <li class="nav-li"><a class="nav-li-a" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="main">
-          <h2 class="title">
-            <p>Services</p>
-            Proin iaculis purus consequat sem cure.
-          </h2>
-        </section>
-        <ul class="content">
-          <li>
-            <i class="basket"></i>
-            <p>E-Commerce</br>
-              Proin iaculis purus consequat sem cure
-              digni ssim. Donec porttitora entum suscipit
-              aenean rhoncus posuere odio in tincidunt.</p>
-          </li>
-          <li>
-            <i class="laptop"></i>
-            <p>Responsive Web</br>
-              Proin iaculis purus consequat sem cure
-              digni ssim. Donec porttitora entum suscipit
-              aenean rhoncus posuere odio in tincidunt.</p>
-          </li>
-          <li>
-            <i class="locked"></i>
-            <p>Web Security</br>
-              Proin iaculis purus consequat sem cure
-              digni ssim. Donec porttitora entum suscipit
-              aenean rhoncus posuere odio in tincidunt.</p>
-          </li>
-        </ul></section>
-      <section class="forma"><div>
         <h2 class="title">
-          <p>Contact us</p>
+          <p>Services</p>
           Proin iaculis purus consequat sem cure.
         </h2>
-        <form action="#" method="get">
-          <table class="contactus">
-            <tr>
-              <td>
-                <label><input type="name" name="name" placeholder="your Name *" required></label>
-              </td>
-              <td rowspan="3">
-                <textarea name="body" rows="10" cols="45" placeholder="Your message *" required></textarea>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label><input type="email" name="email" placeholder="your e-mail *" required></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label><input type="text" name="subject" placeholder="subject"></label>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" class="button">
-                <input type="submit" value="Send Message">
-              </td>
-            </tr>
-          </table>
-        </form></div>
+        <ul class="content">
+          <li class="cont-li">
+            <i class="basket"></i>
+            <p class="cont-text">
+              E-Commerce<br />
+              Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+            </p>
+          </li>
+          <li class="cont-li">
+            <i class="laptop"></i>
+            <p class="cont-text">
+              Responsive Web<br />
+              Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+            </p>
+          </li>
+          <li class="cont-li">
+            <i class="locked"></i>
+            <p class="cont-text">
+              Web Security<br />
+              Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="send-meesage">
+        <div>
+          <h2 class="title">
+            <p>Contact us</p>
+            Proin iaculis purus consequat sem cure.
+          </h2>
+          <form action="#" method="get">
+            <div class="getform">
+              <label>
+                <input class="getform-name" type="name" name="name" placeholder="your Name *" required />
+                <input class="getform-email" type="email" name="email" placeholder="your e-mail *" required />
+                <input class="getform-sub" type="text" name="subject" placeholder="subject" />
+              </label>
+              <label>
+                <textarea class="getform-text" name="body" placeholder="Your message *" required> </textarea>
+              </label>
+            </div>
+            <input class="getform-btn" type="submit" value="Send Message" />
+          </form>
+        </div>
       </section>
     </main>
   </body>
