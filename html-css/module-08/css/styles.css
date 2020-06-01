@@ -49,8 +49,7 @@ main {
 .top {
   padding: 38px 0;
   margin-bottom: 60px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../img/bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -107,7 +106,7 @@ main {
 .promo {
   height: 635px;
 }
-.promo section {
+.promo {
   text-align: center;
 }
 .btn-find {

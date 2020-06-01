@@ -47,9 +47,9 @@ li {
 
 .nav,
 .content,
-.forma div {
+.send-meesage > div {
   max-width: 930px;
-  margin: auto;
+  margin: 0 auto;
 }
 header {
   margin-bottom: 100px;
