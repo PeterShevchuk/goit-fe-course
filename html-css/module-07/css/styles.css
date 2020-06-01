@@ -1,7 +1,15 @@
+/* ============= BASE ========== */
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Droid Serif"; /* назва одна */
   src: url("../fonts/droidserifitalic.woff2"); /* різні файли */
@@ -20,6 +28,14 @@
   font-weight: 400; /* різна вага/жирність */
   font-style: normal;
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* ============= BODY ========== */
 .wrapper {
   color: #999999;
   font-family: "Montserrat";
@@ -28,18 +44,15 @@
   background-color: #ffffff;
   padding-top: 38px;
 }
+
 .nav,
 .content,
 .forma div {
-  width: 930px;
+  max-width: 930px;
   margin: auto;
 }
-a {
-  text-decoration: none;
-}
-li {
-  list-style-type: none;
-}
+
+/* ============= NAV ========== */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -70,6 +83,8 @@ li {
 .nav a:hover {
   color: #fed136;
 }
+
+/* ============= LOGO ========== */
 .logo {
   font-family: "Wisdom Script";
   font-size: 26px;
@@ -79,6 +94,8 @@ li {
   text-transform: none;
   border: none;
 }
+
+/* ============= CONTENT ========== */
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -128,6 +145,8 @@ li {
 .content .locked {
   background-image: url("../img/icons/Locked.png");
 }
+
+/* ============= TEXT ========== */
 .title {
   font-size: 16px;
   font-weight: 400;
@@ -148,6 +167,7 @@ li {
   color: #000000;
 }
 
+/* ============= FORM ========== */
 .forma {
   display: flex;
   align-items: center;
@@ -163,11 +183,6 @@ li {
 .forma .title p {
   color: #ffffff;
 }
-/* .contactus {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
 .contactus input,
 .contactus textarea {
   padding: 15px 20px;
