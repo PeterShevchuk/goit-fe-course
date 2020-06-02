@@ -12,16 +12,19 @@
   }
   .top,
   main {
-    flex-basis: 320px;
+    min-width: 620px;
   }
 }
 
 @media (min-width: 1024px) {
+  .wrapper {
+    min-width: 940px;
+  }
 }
 
 @media (max-width: 500px) {
   .wrapper {
-    min-width: 320px;
+    min-width: 340px;
     flex-direction: column;
   }
   .logo-two {
