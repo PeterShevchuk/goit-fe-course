@@ -1,13 +1,7 @@
-@media (min-width: 400px) {
-  .btn-find {
-    max-width: 240px;
-  }
-  .btn-find-two {
-    max-width: 190px;
-  }
-}
-
 @media (min-width: 768px) {
+  .container {
+    max-width: 492px;
+  }
   .content {
     display: flex;
     flex-wrap: wrap;
@@ -38,15 +32,13 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .content {
+@media (min-width: 940px) {
+  .container {
     max-width: 940px;
   }
   .nav,
   .promo {
     max-width: 940px;
-    padding: 0;
-    margin: 0 auto;
   }
   .nav {
     margin-bottom: 150px;

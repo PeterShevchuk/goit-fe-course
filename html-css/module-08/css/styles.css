@@ -20,18 +20,21 @@ li {
 }
 
 /* ======================== BODY ================== */
-.wrapper {
+body {
   color: #999999;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   min-width: 320px;
 }
-
-main {
+.container {
+  max-width: 320px;
+  margin: 0 auto;
   text-align: center;
 }
-
+.main {
+  padding-bottom: 20px;
+}
 /* ======================== TOP ================== */
 .top {
   padding: 20px 10px 0;
@@ -109,7 +112,6 @@ main {
   border-radius: 25px;
   font-weight: 700;
   margin-bottom: 138px;
-  width: 100%;
 }
 .btn-find:hover {
   background-color: #fff;
@@ -128,17 +130,13 @@ main {
 }
 
 /* ======================== CONTENT  ================== */
-.main {
-  padding: 0 40px 10px 40px;
-}
 
 .content {
-  margin: 0 auto 90px;
   text-align: center;
   font-family: "Roboto Slab";
   font-size: 14px;
   line-height: 25px;
-  max-width: 492px;
+  margin-bottom: 20px;
 }
 .cont-li {
   max-width: 220px;
@@ -194,8 +192,7 @@ main {
 
 /* ======================== FOOTER BTN  ================== */
 .btn-find-two {
-  padding: 10px;
-  width: 100%;
+  padding: 10px 25px;
   border-radius: 20px;
   font-weight: 700;
   background-color: #fff;
