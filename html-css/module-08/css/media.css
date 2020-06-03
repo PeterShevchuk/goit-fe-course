@@ -25,8 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
-    margin: 0 auto;
+    margin: 0 auto 150px;
   }
   .title2 {
     margin-bottom: 20px;
@@ -40,9 +39,6 @@
   .nav,
   .promo {
     max-width: 940px;
-  }
-  .nav {
-    margin-bottom: 150px;
   }
   .cont-li:not(:last-child) {
     margin: 0 10px 0 0;
