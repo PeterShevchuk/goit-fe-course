@@ -102,16 +102,18 @@ main {
 .btn-find {
   font-size: 14px;
   line-height: 16px;
-  padding: 16px 25px;
+  padding: 14px 23px;
   color: #ffffff;
   background-color: rgb(255, 78, 80);
+  border: 2px solid rgb(255, 78, 80);
   border-radius: 25px;
   font-weight: 700;
   margin-bottom: 138px;
   width: 100%;
 }
 .btn-find:hover {
-  background-color: rgba(255, 78, 80, 0.9);
+  background-color: #fff;
+  color: rgb(255, 78, 80);
 }
 
 /* ======================== TEXT  ================== */
@@ -174,7 +176,7 @@ main {
   transition: all 0.2s linear;
 }
 
-.Photo:hover::after {
+.cont-li:hover .Photo::after {
   transform: scale(1.2);
 }
 .tv::after {
@@ -199,4 +201,8 @@ main {
   background-color: #fff;
   color: rgb(255, 78, 80);
   border: 2px solid rgb(255, 78, 80);
+}
+.btn-find-two:hover {
+  color: #ffffff;
+  background-color: rgb(255, 78, 80);
 }
