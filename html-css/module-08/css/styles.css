@@ -189,7 +189,7 @@ main {
   background: #ffa507 url(../img/icons/bottle.png) no-repeat center center;
 }
 .shape::after {
-  background: #4e73db url(../img/icons/shape.png) no-repeat center center;
+  background: #4e73db url(../img/icons/Shape.png) no-repeat center center;
 }
 
 /* ======================== FOOTER BTN  ================== */
