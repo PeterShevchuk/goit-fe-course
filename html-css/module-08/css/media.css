@@ -48,6 +48,9 @@
     padding: 0;
     margin: 0 auto;
   }
+  .nav {
+    margin-bottom: 150px;
+  }
   .cont-li:not(:last-child) {
     margin: 0 10px 0 0;
   }
