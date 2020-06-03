@@ -5,35 +5,19 @@
   margin: 0px;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Droid Serif"; /* назва одна */
-  src: url("../fonts/droidserifitalic.woff2"); /* різні файли */
-  font-weight: 400; /* різна вага/жирність */
-  font-style: italic;
-}
-@font-face {
-  font-family: "Roboto Slab"; /* назва одна */
-  src: url("../fonts/Robotoslabregular.woff2"); /* різні файли */
-  font-weight: 400; /* різна вага/жирність */
-  font-style: Regular;
-}
-@font-face {
-  font-family: "Wisdom Script"; /* назва одна */
-  src: url("../fonts/WisdomScriptAI.woff2"); /* різні файли */
-  font-weight: 400; /* різна вага/жирність */
-  font-style: normal;
-}
 a {
   text-decoration: none;
+  display: inline-block;
 }
 li {
   list-style-type: none;
 }
 
+.nav {
+}
+
 /* ======================== BODY ================== */
 .wrapper {
-  display: flex;
-  flex-direction: column;
   color: #999999;
   font-family: "Montserrat";
   font-weight: 400;
@@ -46,40 +30,26 @@ main {
 
 /* ======================== TOP ================== */
 .top {
-  padding: 38px 0;
+  padding: 20px 10px 0;
   margin-bottom: 60px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 
 /* ======================== NAV  ================== */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: Montserrat;
-  font-weight: 500;
-}
-.nav ul {
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-}
-.nav li {
-  margin-right: 5px;
-}
-.nav li:last-child {
-  margin: 0;
+.nav-menu {
+  display: block;
+  text-align: center;
 }
 .nav a {
-  padding: 10px 15px;
+  display: inline-block;
+  padding: 13px;
   color: #ffffff;
-  font-size: 14px;
   font-weight: 700;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 20px;
+  border-radius: 26px;
   transition: all 0.2s linear;
 }
 .nav a:hover {
@@ -87,79 +57,86 @@ main {
 }
 
 /* ======================== LOGO  ================== */
-.logo-one,
-.logo-two {
-  font-size: 26px;
+.logo-one {
+  font-size: 30px;
   color: #ffffff;
-  line-height: 26px;
+  line-height: 36px;
   font-weight: 700;
-  text-transform: none;
-  border: none;
+  display: none;
 }
 .logo-two {
-  display: none;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 24px;
+  font-weight: 700;
   text-align: center;
+  margin: 118px 0 38px 0;
 }
 
 /* ======================== PROMO  ================== */
-.promo {
-  height: 635px;
-}
+
 .promo {
   text-align: center;
 }
-.btn-find {
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: rgb(255, 78, 80);
-  border-radius: 20px;
-  border: 0px;
-  font-weight: 700;
-}
-.btn-find:hover {
-  background-color: rgba(255, 78, 80, 0.8);
-}
-
-/* ======================== TEXT  ================== */
 .title {
-  font-weight: 400;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
   text-align: center;
   color: #ffffff;
   margin-bottom: 35px;
 }
 .title p {
-  font-size: 52px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  font-style: normal;
-  line-height: 60px;
+  line-height: 36px;
+  margin-bottom: 18px;
 }
+.btn-find {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 16px 25px;
+  color: #ffffff;
+  background-color: rgb(255, 78, 80);
+  border-radius: 25px;
+  font-weight: 700;
+  margin-bottom: 138px;
+  width: 100%;
+}
+.btn-find:hover {
+  background-color: rgba(255, 78, 80, 0.9);
+}
+
+/* ======================== TEXT  ================== */
+
 .title2 {
   text-align: center;
   font-size: 22px;
   font-weight: 700;
   font-family: Montserrat;
   color: #333333;
+  margin-bottom: 20px;
 }
 
 /* ======================== CONTENT  ================== */
+.main {
+  padding: 0 40px 10px 40px;
+}
+
 .content {
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
   text-align: center;
   font-family: "Roboto Slab";
   font-size: 14px;
   line-height: 25px;
+  max-width: 492px;
 }
-.content li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: top;
-  flex-direction: column;
-  width: 235px;
-  margin: 25px 0;
+.cont-li {
+  max-width: 220px;
+  margin: 10px auto;
 }
-.content li p:first-child {
+.cont-li p:first-child {
   margin-bottom: 15px;
   color: #000000;
   font-family: Montserrat;
@@ -173,7 +150,6 @@ main {
   color: #333333;
 }
 .Photo {
-  margin: 10px 0px;
   position: relative;
 }
 
@@ -189,8 +165,12 @@ main {
   border-radius: 50%;
   bottom: 10px;
   right: 50px;
+  transition: all 0.2s linear;
 }
 
+.Photo:hover::after {
+  transform: scale(1.2);
+}
 .tv::after {
   background: #ff4e50 url(../img/icons/tv.png) no-repeat center center;
 }
@@ -206,15 +186,10 @@ main {
 
 /* ======================== FOOTER BTN  ================== */
 .btn-find-two {
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: rgb(255, 78, 80);
+  padding: 10px;
+  width: 100%;
   border-radius: 20px;
-  border: 0px;
   font-weight: 700;
-}
-
-.btn-find-two {
   background-color: #fff;
   color: rgb(255, 78, 80);
   border: 2px solid rgb(255, 78, 80);
