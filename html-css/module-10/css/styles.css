@@ -30,12 +30,21 @@ body {
   font-size: 15px;
   background-color: #ffffff;
 }
+
+.btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 9px 30px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-.header {
+.top {
   padding: 38px 0 230px;
   margin-bottom: 50px;
   background: -o-linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)), url("../img/background.png");
@@ -46,7 +55,7 @@ body {
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
-  .header {
+  .top {
     background: -o-linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)), url("../img/background@2x.png");
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.8)), to(rgba(252, 227, 138, 0.8))), url("../img/background@2x.png");
     background: linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)), url("../img/background@2x.png");
@@ -79,7 +88,7 @@ body {
 .menu__items:last-child {
   margin: 0;
 }
-.menu__items-link {
+.menu__link {
   padding: 5px 0px;
   color: #ffffff;
   font-size: 14px;
@@ -89,14 +98,14 @@ body {
   transition: all 0.2s linear;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
-.menu__items-link:hover {
+.menu__link:hover {
   color: #fce38a;
   border-color: #fce38a;
 }
-.menu__items-link:hover .menu__items-icon {
+.menu__link:hover .menu__icon {
   fill: #fce38a;
 }
-.menu__items-icon {
+.menu__linkIcon {
   width: 18px;
   height: 18px;
   fill: #ffffff;
@@ -111,15 +120,11 @@ body {
   -webkit-animation: Logos 0.7s linear;
   animation: Logos 0.7s linear;
 }
-.btn-learnmore {
-  text-transform: uppercase;
-  color: #ffffff;
+.gtn-l {
   padding: 12px 30px;
-  font-size: 14px;
-  line-height: 18px;
   border: 1px solid #ffffff;
 }
-.btn-learnmore:hover {
+.gtn-l:hover {
   background-color: #ffffff;
   color: #fce38a;
 }
@@ -166,7 +171,7 @@ body {
   max-width: 280px;
   text-align: left;
 }
-.cont__items-icon {
+.cont__itemsIcon {
   width: 32px;
   height: 32px;
   display: inline-block;
@@ -279,7 +284,7 @@ body {
 .team__item > a:last-child {
   border: none;
 }
-.team__item-Icon {
+.team__itemIcon {
   height: 26px;
   width: 26px;
   fill: #f38181;
@@ -287,7 +292,7 @@ body {
 .team__item > a:hover {
   background-color: #f38181;
 }
-.team__item > a:hover .team__item-Icon {
+.team__item > a:hover .team__itemIcon {
   fill: #ffffff;
 }
 .team__list:hover .team__item {
@@ -299,7 +304,7 @@ body {
 .team__list > p {
   margin: 5px;
 }
-.team__item-img {
+.team__itemImg {
   -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   -o-transition: transform 0.2s linear, box-shadow 0.2s linear;
@@ -315,26 +320,26 @@ body {
   -o-object-fit: contain;
   object-fit: contain;
 }
-.team__list:hover > .team__item-img {
+.team__list:hover > .team__itemImg {
   -webkit-transform: translate(-10px, -10px);
   -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
   -webkit-box-shadow: 10px 10px 0 #95e1d3;
   box-shadow: 10px 10px 0 #95e1d3;
 }
-.team__item-name {
+.team__itemName {
   color: #000000;
   font-size: 14px;
   font-family: Montserrat;
   text-transform: uppercase;
 }
-.team__item-prof {
+.team__itemProf {
   font-family: Roboto;
   font-style: italic;
   font-size: 15px;
 }
 
-.footer {
+.footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,10 +357,10 @@ body {
   border-top: 2px solid #e5e5e5;
   color: #000000;
 }
-.footer__autor {
+.footer__link {
   color: #f38181;
 }
-.footer__autor:hover {
+.footer__link:hover {
   text-decoration: underline;
 }
 .form {
@@ -370,14 +375,10 @@ body {
   font-style: italic;
   font-size: 14px;
 }
-.form__send {
+.gtn-s {
   display: inline-block;
-  padding: 10px 25px;
   background-color: #95e1d3;
   border: 1px solid #95e1d3;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
   font-weight: bold;
 }
 

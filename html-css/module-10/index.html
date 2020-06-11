@@ -12,39 +12,43 @@
   </head>
 
   <body>
-    <header class="header">
+    <div class="top">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <a href="#" class="nav__logo">MoGo</a>
+            <ul class="menu">
+              <li class="menu__items"><a class="menu__link" href="#">About</a></li>
+              <li class="menu__items"><a class="menu__link" href="#">Service</a></li>
+              <li class="menu__items"><a class="menu__link" href="#">Work</a></li>
+              <li class="menu__items"><a class="menu__link" href="#">Blog</a></li>
+              <li class="menu__items"><a class="menu__link" href="#">Contact</a></li>
+              <li class="menu__items">
+                <a class="menu__link" href="#">
+                  <svg class="menu__linkIcon">
+                    <use xlink:href="./img/icons/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__items">
+                <a class="menu__link" href="#">
+                  <svg class="menu__linkIcon">
+                    <use xlink:href="./img/icons/sprite.svg#icon-glass"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
       <div class="container">
-        <nav class="nav">
-          <a href="#" class="nav__logo">MoGo</a>
-          <ul class="menu">
-            <li class="menu__items"><a class="menu__items-link" href="#">About</a></li>
-            <li class="menu__items"><a class="menu__items-link" href="#">Service</a></li>
-            <li class="menu__items"><a class="menu__items-link" href="#">Work</a></li>
-            <li class="menu__items"><a class="menu__items-link" href="#">Blog</a></li>
-            <li class="menu__items"><a class="menu__items-link" href="#">Contact</a></li>
-            <li class="menu__items">
-              <a class="menu__items-link" href="#">
-                <svg class="menu__items-icon">
-                  <use xlink:href="./img/icons/sprite.svg#icon-cart"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu__items">
-              <a class="menu__items-link" href="#">
-                <svg class="menu__items-icon">
-                  <use xlink:href="./img/icons/sprite.svg#icon-glass"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
         <h2 class="header__title">
           <span>Creative Template</span><br />
           Welcome<br />to MoGo
         </h2>
-        <a href="#" class="btn-learnmore">Learn more</a>
+        <a href="#" class="btn gtn-l">Learn more</a>
       </div>
-    </header>
+    </div>
     <main class="main">
       <div class="container">
         <section class="section">
@@ -54,7 +58,7 @@
           </h2>
           <ul class="cont">
             <li class="cont__items">
-              <svg class="cont__items-icon">
+              <svg class="cont__itemsIcon">
                 <use xlink:href="./img/icons/sprite.svg#icon-clock"></use>
               </svg>
               <p class="cont__items-text">
@@ -63,7 +67,7 @@
               </p>
             </li>
             <li class="cont__items">
-              <svg class="cont__items-icon">
+              <svg class="cont__itemsIcon">
                 <use xlink:href="./img/icons/sprite.svg#icon-line"></use>
               </svg>
               <p class="cont__items-text">
@@ -72,7 +76,7 @@
               </p>
             </li>
             <li class="cont__items">
-              <svg class="cont__items-icon">
+              <svg class="cont__itemsIcon">
                 <use xlink:href="./img/icons/sprite.svg#icon-computer"></use>
               </svg>
               <p class="cont__items-text">
@@ -81,7 +85,7 @@
               </p>
             </li>
             <li class="cont__items">
-              <svg class="cont__items-icon">
+              <svg class="cont__itemsIcon">
                 <use xlink:href="./img/icons/sprite.svg#icon-seo"></use>
               </svg>
               <p class="cont__items-text">
@@ -90,7 +94,7 @@
               </p>
             </li>
             <li class="cont__items">
-              <svg class="cont__items-icon">
+              <svg class="cont__itemsIcon">
                 <use xlink:href="./img/icons/sprite.svg#icon-home"></use>
               </svg>
               <p class="cont__items-text">
@@ -99,7 +103,7 @@
               </p>
             </li>
             <li class="cont__items">
-              <svg class="cont__items-icon">
+              <svg class="cont__itemsIcon">
                 <use xlink:href="./img/icons/sprite.svg#icon-image"></use>
               </svg>
               <p class="cont__items-text">
@@ -122,27 +126,27 @@
             <li class="team__list">
               <div class="team__item">
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-pinterest"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </div>
-              <div class="team__item-img">
+              <div class="team__itemImg">
                 <img
                   src="./img/content/teamone.png"
                   srcset="./img/content/teamone.png 1x, ./img/content/teamone@2x.png 2x"
@@ -151,33 +155,33 @@
                   height="470"
                 />
               </div>
-              <p class="team__item-name">Matthew Dix</p>
-              <p class="team__item-prof">Graphic Design</p>
+              <p class="team__itemName">Matthew Dix</p>
+              <p class="team__itemProf">Graphic Design</p>
             </li>
             <li class="team__list">
               <div class="team__item">
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-pinterest"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </div>
-              <div class="team__item-img">
+              <div class="team__itemImg">
                 <img
                   src="./img/content/teamtwo.png"
                   srcset="./img/content/teamtwo.png 1x, ./img/content/teamtwo@2x.png 2x"
@@ -186,33 +190,33 @@
                   height="470"
                 />
               </div>
-              <p class="team__item-name">Christopher Campbell</p>
-              <p class="team__item-prof">Branding/UX design</p>
+              <p class="team__itemName">Christopher Campbell</p>
+              <p class="team__itemProf">Branding/UX design</p>
             </li>
             <li class="team__list">
               <div class="team__item">
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-pinterest"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="team__item-Icon">
+                  <svg class="team__itemIcon">
                     <use xlink:href="./img/icons/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </div>
-              <div class="team__item-img">
+              <div class="team__itemImg">
                 <img
                   src="./img/content/teamthree.png"
                   srcset="./img/content/teamthree.png 1x, ./img/content/teamthree@2x.png 2x"
@@ -221,23 +225,23 @@
                   height="470"
                 />
               </div>
-              <p class="team__item-name">Michael Fertig</p>
-              <p class="team__item-prof">Developer</p>
+              <p class="team__itemName">Michael Fertig</p>
+              <p class="team__itemProf">Developer</p>
             </li>
           </ul>
         </section>
       </div>
     </main>
-    <div class="container">
-      <footer class="footer">
-        <p>© 2016 MoGo free PSD template by <a class="footer__autor" href="#">Laaqiq</a></p>
-        <div>
-          <form class="form" action="#" method="get">
+    <footer class="footer">
+      <div class="container">
+        <p>© 2016 MoGo free PSD template by <a class="footer__link" href="#">Laaqiq</a></p>
+        <div class="form">
+          <form action="#" method="get">
             <input class="form__email" type="email" name="email" placeholder="Your Email..." required />
-            <button class="form__send" type="submit" value="send">Subscribe</button>
+            <button class="btn gtn-s" type="submit" value="send">Subscribe</button>
           </form>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
