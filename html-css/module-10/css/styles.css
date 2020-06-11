@@ -30,7 +30,7 @@ button:focus {
   outline: 0;
 }
 
-.wrapper {
+body {
   color: #999999;
   font-family: "Roboto";
   font-weight: 400;
@@ -60,7 +60,7 @@ button:focus {
   }
 }
 
-.navigation {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +132,7 @@ button:focus {
 .section {
   margin-bottom: 90px;
 }
-.content {
+.cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +223,7 @@ button:focus {
   line-height: 180px;
   margin-bottom: 112px;
 }
-.main__team {
+.team{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,10 +232,10 @@ button:focus {
   justify-content: space-between;
   text-align: center;
 }
-.main__teamList {
+.team__list {
   position: relative;
 }
-.main__teamListItem {
+.team__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +261,7 @@ button:focus {
   transition: transform 0.2s linear, opacity 0.2s linear;
   transition: transform 0.2s linear, opacity 0.2s linear, -webkit-transform 0.2s linear;
 }
-.main__teamListItem > a {
+.team__item > a {
   height: 57px;
   width: 57px;
   display: -webkit-box;
@@ -282,30 +282,30 @@ button:focus {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.main__teamListItem > a:last-child {
+.team__item > a:last-child {
   border: none;
 }
-.main__teamListItem-socIcon {
+.team__item-socIcon {
   height: 26px;
   width: 26px;
   fill: #f38181;
 }
-.main__teamListItem > a:hover {
+.team__item > a:hover {
   background-color: #f38181;
 }
-.main__teamListItem > a:hover .main__teamListItem-socIcon {
+.team__item > a:hover .team__item-socIcon {
   fill: #ffffff;
 }
-.main__teamList:hover .main__teamListItem {
+.team__list:hover .team__item {
   opacity: 1;
   -webkit-transform: translate(-10px, -10px);
   -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
 }
-.main__teamList > p {
+.team__list > p {
   margin: 5px;
 }
-.main__teamList .main__teamListItem-img {
+.team__list .team__item-img {
   -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   -o-transition: transform 0.2s linear, box-shadow 0.2s linear;
@@ -319,20 +319,20 @@ button:focus {
   width: 100%;
   height: 100%;
 }
-.main__teamList:hover > .main__teamListItem-img {
+.team__list:hover > .team__item-img {
   -webkit-transform: translate(-10px, -10px);
   -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
   -webkit-box-shadow: 10px 10px 0 #95e1d3;
   box-shadow: 10px 10px 0 #95e1d3;
 }
-.main__teamListItem-name {
+.team__item-name {
   color: #000000;
   font-size: 14px;
   font-family: Montserrat;
   text-transform: uppercase;
 }
-.main__teamListItem-prof {
+.team__item-prof {
   font-family: Roboto;
   font-style: italic;
   font-size: 15px;
@@ -362,10 +362,10 @@ button:focus {
 .footer__autor:hover {
   text-decoration: underline;
 }
-.footer__form {
+.form {
   font-size: 0;
 }
-.footer__form-email {
+.form__email {
   display: inline-block;
   padding: 10px;
   border: 1px solid #e7e7e7;
@@ -374,7 +374,7 @@ button:focus {
   font-style: italic;
   font-size: 14px;
 }
-.footer__form-send {
+.form__send {
   display: inline-block;
   padding: 10px 25px;
   background-color: #95e1d3;
@@ -385,6 +385,6 @@ button:focus {
   font-weight: bold;
 }
 
-.footer__form-email:focus {
+.form__email:focus {
   outline: 0;
 }
