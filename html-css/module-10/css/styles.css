@@ -42,7 +42,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-.top {
+.header {
   padding: 38px 0 230px;
   margin-bottom: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.8)), to(rgba(252, 227, 138, 0.8))), url("../img/background.png");
@@ -53,7 +53,7 @@ body {
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .top {
+  .header {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.8)), to(rgba(252, 227, 138, 0.8))), url("../img/background@2x.png");
     background: -o-linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)), url("../img/background@2x.png");
     background: linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)), url("../img/background@2x.png");
@@ -99,10 +99,10 @@ body {
   color: #fce38a;
   border-bottom: 2px solid #fce38a;
 }
-.menu__items-link:hover .menu__items-link-icon {
+.menu__items-link:hover .menu__items-icon {
   fill: #fce38a;
 }
-.menu__items-link-icon {
+.menu__items-icon {
   width: 18px;
   height: 18px;
   fill: #ffffff;
@@ -117,7 +117,7 @@ body {
   -webkit-animation: Logos 0.7s linear;
   animation: Logos 0.7s linear;
 }
-.btnLearnmore {
+.btn-learnmore {
   text-transform: uppercase;
   color: #ffffff;
   padding: 12px 30px;
@@ -125,7 +125,7 @@ body {
   line-height: 18px;
   border: 1px solid #ffffff;
 }
-.btnLearnmore:hover {
+.btn-learnmore:hover {
   background-color: #ffffff;
   color: #fce38a;
 }
@@ -205,14 +205,14 @@ body {
   content: "";
   margin: 35px auto 55px auto;
 }
-.main__text {
+.main-text {
   text-align: center;
   margin-bottom: 80px;
   font-size: 16px;
   line-height: 29px;
 }
 
-.header__title span {
+.header__title > span {
   font-size: 72px;
   line-height: 86px;
   margin-bottom: 46px;
@@ -285,7 +285,7 @@ body {
 .team__item > a:last-child {
   border: none;
 }
-.team__item-socIcon {
+.team__item-Icon {
   height: 26px;
   width: 26px;
   fill: #f38181;
@@ -293,7 +293,7 @@ body {
 .team__item > a:hover {
   background-color: #f38181;
 }
-.team__item > a:hover .team__item-socIcon {
+.team__item > a:hover .team__item-Icon {
   fill: #ffffff;
 }
 .team__list:hover .team__item {
@@ -305,7 +305,7 @@ body {
 .team__list > p {
   margin: 5px;
 }
-.team__list .team__item-img {
+.team__item-img {
   -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   -o-transition: transform 0.2s linear, box-shadow 0.2s linear;
