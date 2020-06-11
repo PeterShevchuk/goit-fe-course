@@ -87,10 +87,11 @@ body {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 .menu__items-link:hover {
   color: #fce38a;
-  border-bottom: 2px solid #fce38a;
+  border-color: #fce38a;
 }
 .menu__items-link:hover .menu__items-icon {
   fill: #fce38a;
