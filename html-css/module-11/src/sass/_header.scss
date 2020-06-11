@@ -1,0 +1,86 @@
+
+.btn {
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 9px 30px;
+    @include fz(14px);
+    line-height: 18px;
+  }
+  
+  .top {
+    padding: 38px 0 230px;
+    margin-bottom: 50px;
+    background: -o-linear-gradient($bggc1, $bggc2), url($bgimg);
+    background: -webkit-gradient(linear, left top, left bottom, from($bggc1), to($bggc2)), url($bgimg);
+    background: linear-gradient($bggc1, $bggc2), url($bgimg);
+    background-position: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .top {
+      background: -o-linear-gradient($bggc1, $bggc2), url($bgimg2x);
+      background: -webkit-gradient(linear, left top, left bottom, from($bggc1), to($bggc2)), url($bgimg2x);
+      background: linear-gradient($bggc1, $bggc2), url($bgimg2x);
+    }
+  }
+  
+  .nav {
+    @extend %df;
+    @extend %jcb;
+    @extend %ai;
+    font-family: $ffn;
+    font-weight: 500;
+    margin-bottom: 182px;
+    
+  &__logo {
+    @include fz(30px);
+    color: #ffffff;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: none;
+    border: none;
+    -webkit-animation: Logos 0.7s linear;
+    animation: Logos 0.7s linear;
+  }
+  }
+  .menu {
+    @extend %df;
+    &__items {
+      margin-right: 50px;
+      text-transform: uppercase;
+    }
+    &__items:last-child {
+      margin: 0;
+    }
+    &__link {
+      padding: 5px 0px;
+      color: #ffffff;
+      @include fz(14px);
+      line-height: 11px;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    &__link:hover {
+      color: $bct;
+      border-color: $bct;
+    }
+    &__link:hover &__icon {
+      fill: $bct;
+    }
+    &__linkIcon {
+      width: 18px;
+      height: 18px;
+      fill: #ffffff;
+    }
+  }
+  .gtn-l {
+    padding: 12px 30px;
+    border: 1px solid #ffffff;
+    &:hover {
+    background-color: #ffffff;
+    color: $bct;
+    }
+  }
