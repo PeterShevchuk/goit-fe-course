@@ -29,12 +29,11 @@ body {
   min-width: 320px;
 }
 .main {
-  padding-bottom: 20px;
+  padding: 60px 0 20px;
 }
 /* ======================== TOP ================== */
 .top {
   padding: 20px 0;
-  margin-bottom: 60px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: top;

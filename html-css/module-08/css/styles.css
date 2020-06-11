@@ -27,12 +27,12 @@ body {
   font-size: 14px;
   min-width: 320px;
 }
-.container {
+/* .container {
   max-width: 320px;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-}
+} */
 .main {
   padding-bottom: 20px;
 }
@@ -72,14 +72,12 @@ body {
   color: #ffffff;
   line-height: 36px;
   font-weight: 700;
-  display: none;
 }
 .logo-two {
   font-size: 20px;
   color: #ffffff;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
   margin: 118px 0 38px 0;
 }
 
@@ -96,7 +94,7 @@ body {
   color: #ffffff;
   margin-bottom: 35px;
 }
-.title p {
+.title span {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
