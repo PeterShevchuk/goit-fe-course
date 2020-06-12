@@ -47,8 +47,8 @@
   text-transform: uppercase;
   color: #000000;
 }
-.title > span,
-.header__title > span {
+.title_firstText,
+.header__firstText {
   @include fz-lh(24px);
   font-family: $ffkau;
   font-weight: 400;
@@ -67,7 +67,7 @@
   margin-bottom: 80px;
   @include fz-lh(16px, 29px);
 }
-.header__title > span {
+.header__firstText {
   @include fz-lh(72px, 86px);
   margin-bottom: 46px;
 }

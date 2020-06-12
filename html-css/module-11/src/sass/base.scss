@@ -24,7 +24,7 @@ button:focus {
 }
 
 body {
-  color: #999999;
+  color: $bc;
   font-family: $bff;
   font-weight: $bff;
   @include fz-lh(15px);
@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: $bwc;
   margin: 0 auto;
   text-align: center;
 }
