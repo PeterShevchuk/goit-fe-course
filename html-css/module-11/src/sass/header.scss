@@ -67,14 +67,14 @@
       color: $bct;
       border-color: $bct;
     }
-    &__link:hover &__linkicon {
-      fill: $bct;
-    }
     &__linkIcon {
       width: 18px;
       height: 18px;
       fill: #ffffff;
     }
+              &__link:hover svg {
+                fill: $bct;
+              }
   }
   .gtn-l {
     padding: 12px 30px;
