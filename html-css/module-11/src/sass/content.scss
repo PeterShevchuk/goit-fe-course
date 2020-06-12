@@ -7,7 +7,7 @@
   flex-direction: row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  &__items {
+  &__item {
     @extend %df;
     @extend %df;
     @extend %jcb;
@@ -17,19 +17,19 @@
     -ms-flex-positive: unset;
     flex-grow: unset;
   }
-  &__items:not(:nth-last-child(-n + 3)) {
+  &__item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 90px;
   }
-  &__itemsText::first-line {
+  &__itemText::first-line {
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #000000;
   }
-  &__itemsText {
+  &__itemText {
     max-width: 280px;
     text-align: left;
   }
-  &__itemsIcon {
+  &__itemIcon {
     width: 32px;
     height: 32px;
     display: inline-block;
@@ -142,26 +142,26 @@
   }
   &__item > a:last-child {
     border: none;
-    &Icon {
-      height: 26px;
-      width: 26px;
-      fill: #f38181;
-    }
-    & > a:hover &Icon {
-      fill: #ffffff;
-    }
-    &Name {
-      color: #000000;
-      @include fz(14px);
-      font-family: $ffmon;
-      text-transform: uppercase;
-    }
-    &Prof {
-      font-family: $ffrob;
-      font-style: italic;
-      @include fz(15px);
-    }
   }
+      &__itemIcon {
+        height: 26px;
+        width: 26px;
+        fill: #f38181;
+      }
+      &__item > a:hover &__itemIcon {
+        fill: #ffffff;
+      }
+      &__itemName {
+        color: #000000;
+        @include fz(14px);
+        font-family: $ffmon;
+        text-transform: uppercase;
+      }
+      &__itemProf {
+        font-family: $ffrob;
+        font-style: italic;
+        @include fz(15px);
+      }
   &__item > a:hover {
     background-color: #f38181;
   }
