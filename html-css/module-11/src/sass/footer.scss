@@ -1,41 +1,39 @@
-
 .footer .container {
   @extend %df;
   @extend %ai;
   @extend %jcb;
-    width: 100%;
-    padding: 20px 0px;
-    text-align: left;
-    font-family: Open Sans;
-    @include fz(16px);
-    border-top: 2px solid #e5e5e5;
-    color: #000000;
-  }
-  .footer__link {
-    color: #f38181;
-  }
-  .footer__link:hover {
-    text-decoration: underline;
-  }
-  .form {
-    @include fz(0);
-    &__email {
-      display: inline-block;
-      padding: 10px;
-      border: 1px solid #e7e7e7;
-      color: #e7e7e7;
-      border-right: 0px;
-      font-style: italic;
-      @include fz(14px);
-    }
-    &__email:focus {
-      outline: 0;
-    }
-  }
-  .gtn-s {
+  width: 100%;
+  padding: 20px 0px;
+  text-align: left;
+  font-family: Open Sans;
+  @include fz-lh(16px);
+  border-top: 2px solid #e5e5e5;
+  color: #000000;
+}
+.footer__link {
+  color: #f38181;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.form {
+  @include fz-lh(0);
+  &__email {
     display: inline-block;
-    background-color: #95e1d3;
-    border: 1px solid #95e1d3;
-    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    color: #e7e7e7;
+    border-right: 0px;
+    font-style: italic;
+    @include fz-lh(14px);
   }
-  
+  &__email:focus {
+    outline: 0;
+  }
+}
+.gtn-s {
+  display: inline-block;
+  background-color: #95e1d3;
+  border: 1px solid #95e1d3;
+  font-weight: bold;
+}

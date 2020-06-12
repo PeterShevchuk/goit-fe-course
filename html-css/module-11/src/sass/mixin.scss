@@ -1,3 +1,4 @@
-@mixin fz($fz: 14px) {
-    font-size: $fz;
-  }
+@mixin fz-lh($fz: 14px, $lh: $fz * 1.2) {
+  font-size: $fz;
+  line-height: $lh;
+}

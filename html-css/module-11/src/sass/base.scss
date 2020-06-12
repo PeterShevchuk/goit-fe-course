@@ -27,7 +27,7 @@ body {
   color: #999999;
   font-family: $bff;
   font-weight: $bff;
-  @include fz(15px);
+  @include fz-lh(15px);
   background-color: $bbc;
 }
 

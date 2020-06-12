@@ -39,7 +39,7 @@
 }
 .title,
 .header__title {
-    @include fz(30px);
+  @include fz-lh(30px);
   font-weight: 700;
   font-family: $ffmon;
   text-align: center;
@@ -49,8 +49,8 @@
 }
 .title > span,
 .header__title > span {
-    @include fz(24px);
-  font-family: Kaushan Script;
+  @include fz-lh(24px);
+  font-family: $ffkau;
   font-weight: 400;
   text-transform: none;
   margin-bottom: 10px;
@@ -65,18 +65,15 @@
 .main-text {
   text-align: center;
   margin-bottom: 80px;
-  @include fz(16px);
-  line-height: 29px;
+  @include fz-lh(16px, 29px);
 }
 .header__title > span {
-    @include fz(72px);
-  line-height: 86px;
+  @include fz-lh(72px, 86px);
   margin-bottom: 46px;
 }
 .header__title {
   color: #ffffff;
-  @include fz(150px);
-  line-height: 180px;
+  @include fz-lh(150px, 180px);
   margin-bottom: 112px;
 }
 .team {
@@ -99,23 +96,9 @@
     height: 100%;
     z-index: 2;
     opacity: 0;
-    background: -o-linear-gradient(
-      top left,
-      rgba(252, 227, 138, 0.8),
-      rgba(156, 98, 98, 0.8)
-    );
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      from(rgba(252, 227, 138, 0.8)),
-      to(rgba(156, 98, 98, 0.8))
-    );
-    background: linear-gradient(
-      to bottom right,
-      rgba(252, 227, 138, 0.8),
-      rgba(156, 98, 98, 0.8)
-    );
+    background: -o-linear-gradient(top, $bggc1, $bggc2);
+    background: -webkit-gradient(linear, top, bottom, from($bggc1), to($bggc2));
+    background: linear-gradient(to bottom, $bggc1, $bggc2);
     -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
     transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
     -o-transition: transform 0.2s linear, opacity 0.2s linear;
@@ -143,25 +126,25 @@
   &__item > a:last-child {
     border: none;
   }
-      &__itemIcon {
-        height: 26px;
-        width: 26px;
-        fill: #f38181;
-      }
-      &__item > a:hover &__itemIcon {
-        fill: #ffffff;
-      }
-      &__itemName {
-        color: #000000;
-        @include fz(14px);
-        font-family: $ffmon;
-        text-transform: uppercase;
-      }
-      &__itemProf {
-        font-family: $ffrob;
-        font-style: italic;
-        @include fz(15px);
-      }
+  &__itemIcon {
+    height: 26px;
+    width: 26px;
+    fill: #f38181;
+  }
+  &__item > a:hover &__itemIcon {
+    fill: #ffffff;
+  }
+  &__itemName {
+    color: #000000;
+    @include fz-lh(14px);
+    font-family: $ffmon;
+    text-transform: uppercase;
+  }
+  &__itemProf {
+    font-family: $ffrob;
+    font-style: italic;
+    @include fz-lh(15px);
+  }
   &__item > a:hover {
     background-color: #f38181;
   }
