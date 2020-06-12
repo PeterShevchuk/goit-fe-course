@@ -3,6 +3,10 @@
     <div class="container">
       <nav class="nav">
         <a href="#" class="nav__logo">MoGo</a>
+        <input type="checkbox" id="menuMobile" class="nav__checkBox" />
+        <label for="menuMobile" class="nav__button">
+          <span></span><span></span><span></span>
+        </label>
         <ul class="menu">
           <li class="menu__items"><a class="menu__link" href="#">About</a></li>
           <li class="menu__items">
@@ -22,6 +26,37 @@
           </li>
           <li class="menu__items">
             <a class="menu__link" href="#">
+              <svg class="menu__linkIcon">
+                <use xlink:href="./images/sprite.svg#icon-glass"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="menuMobile">
+          <li class="menuMobile__items">
+            <a class="menuMobile__link" href="#">About</a>
+          </li>
+          <li class="menuMobile__items">
+            <a class="menuMobile__link" href="#">Service</a>
+          </li>
+          <li class="menuMobile__items">
+            <a class="menuMobile__link" href="#">Work</a>
+          </li>
+          <li class="menuMobile__items">
+            <a class="menuMobile__link" href="#">Blog</a>
+          </li>
+          <li class="menuMobile__items">
+            <a class="menuMobile__link" href="#">Contact</a>
+          </li>
+          <li class="menuMobile__items">
+            <a class="menuMobile__link" href="#">
+              <svg class="menu__linkIcon">
+                <use xlink:href="./images/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menuMobile__items">
+            <a class="menuMobile__link" href="#">
               <svg class="menu__linkIcon">
                 <use xlink:href="./images/sprite.svg#icon-glass"></use>
               </svg>

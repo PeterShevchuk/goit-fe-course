@@ -80,6 +80,7 @@
   @extend %df;
   @extend %jcb;
   text-align: center;
+  flex-wrap: wrap;
   &__list {
     position: relative;
   }

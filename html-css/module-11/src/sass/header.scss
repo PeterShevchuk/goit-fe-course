@@ -47,7 +47,7 @@
   font-family: $ffmon;
   font-weight: 500;
   margin-bottom: 182px;
-
+  position: relative;
   &__logo {
     @include fz-lh(30px);
     color: #ffffff;
@@ -57,7 +57,11 @@
     -webkit-animation: Logos 0.7s linear;
     animation: Logos 0.7s linear;
   }
+  &__checkBox {
+    display: none;
+  }
 }
+
 .menu {
   @extend %df;
   &__items {
@@ -87,6 +91,86 @@
   }
   &__link:hover svg {
     fill: $bct;
+  }
+}
+.menuMobile {
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 0;
+  right: 0;
+  min-width: 150px;
+  background-color: $bggc1;
+  margin: 10px -30px;
+  &__items {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  &__items:last-child {
+    margin: 0;
+  }
+  &__link {
+    padding: 5px 0px;
+    color: #ffffff;
+    @include fz-lh(14px);
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  &__link:hover {
+    color: $bct;
+  }
+  &__linkIcon {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+  }
+  &__link:hover svg {
+    fill: $bct;
+  }
+}
+.nav__button {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 5px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    background: {
+      color: #ffffff;
+    }
+    transform: translate(0, 0) rotate(0);
+    transition: transform 0.1s linear;
+  }
+  &:hover span {
+    background-color: $bct;
+  }
+}
+.nav__checkBox:checked ~ {
+  .nav__button span {
+    &:nth-child(1) {
+      transform: translate(0, 100%) rotate(45deg);
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      transform: translate(0, -100%) rotate(-45deg);
+    }
+  }
+  .menuMobile {
+    display: flex;
   }
 }
 .gtn-l {

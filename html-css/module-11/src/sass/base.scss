@@ -29,6 +29,7 @@ body {
   font-weight: $bff;
   @include fz-lh(15px);
   background-color: $bbc;
+  min-width: 320px;
 }
 
 .container {

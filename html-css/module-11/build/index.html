@@ -17,6 +17,10 @@
         <div class="container">
           <nav class="nav">
             <a href="#" class="nav__logo">MoGo</a>
+            <input type="checkbox" id="menuMobile" class="nav__checkBox" />
+            <label for="menuMobile" class="nav__button">
+              <span></span><span></span><span></span>
+            </label>
             <ul class="menu">
               <li class="menu__items"><a class="menu__link" href="#">About</a></li>
               <li class="menu__items">
@@ -42,23 +46,53 @@
                 </a>
               </li>
             </ul>
+            <ul class="menuMobile">
+              <li class="menuMobile__items">
+                <a class="menuMobile__link" href="#">About</a>
+              </li>
+              <li class="menuMobile__items">
+                <a class="menuMobile__link" href="#">Service</a>
+              </li>
+              <li class="menuMobile__items">
+                <a class="menuMobile__link" href="#">Work</a>
+              </li>
+              <li class="menuMobile__items">
+                <a class="menuMobile__link" href="#">Blog</a>
+              </li>
+              <li class="menuMobile__items">
+                <a class="menuMobile__link" href="#">Contact</a>
+              </li>
+              <li class="menuMobile__items">
+                <a class="menuMobile__link" href="#">
+                  <svg class="menu__linkIcon">
+                    <use xlink:href="./images/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menuMobile__items">
+                <a class="menuMobile__link" href="#">
+                  <svg class="menu__linkIcon">
+                    <use xlink:href="./images/sprite.svg#icon-glass"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
       </header>
       <div class="container">
         <h1 class="header__title">
-          <span>Creative Template</span><br />
+          <span class="header__firstText">Creative Template</span><br />
           Welcome<br />to MoGo
         </h1>
         <a href="#" class="btn gtn-l">Learn more</a>
       </div>
     </div>
     <main class="main">
-    
-          <div class="container">
-            <section class="section">
+    <div class="container">
+      <section class="section">
         <h2 class="title">
-          <span>We work with</span><br />
+          <span class="title_firstText">We work with</span><br />
           Amazing services
         </h2>
         <ul class="cont">
@@ -68,7 +102,8 @@
             </svg>
             <p class="cont__itemText">
               Photography<br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </p>
           </li>
           <li class="cont__item">
@@ -77,7 +112,8 @@
             </svg>
             <p class="cont__itemText">
               Web Design<br />
-              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
             </p>
           </li>
           <li class="cont__item">
@@ -118,7 +154,7 @@
           </li>
         </ul>
       </section>
-      </div>
+    </div>
     
           <div class="container">
             <section class="section">
@@ -240,16 +276,25 @@
       </section></div>
     </main>
     <footer class="footer">
-        <div class="container">
-          <p>© 2016 MoGo free PSD template by <a class="footer__link" href="#">Laaqiq</a></p>
-          <div class="form">
-            <form action="#" method="get">
-              <input class="form__email" type="email" name="email" placeholder="Your Email..." required />
-              <button class="btn gtn-s" type="submit" value="send">Subscribe</button>
-            </form>
-          </div>
+      <div class="container">
+        <p>
+          © 2016 MoGo free PSD template by
+          <a class="footer__link" href="#">Laaqiq</a>
+        </p>
+        <div class="form">
+          <form action="#" method="get">
+            <input
+              class="form__email"
+              type="email"
+              name="email"
+              placeholder="Your Email..."
+              required
+            />
+            <button class="btn gtn-s" type="submit" value="send">Subscribe</button>
+          </form>
         </div>
-      </footer>
+      </div>
+    </footer>
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->
