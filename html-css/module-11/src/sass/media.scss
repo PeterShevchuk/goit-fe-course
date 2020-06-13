@@ -6,7 +6,10 @@
   .header__firstText {
     @include fz-lh(40px, 60px);
   }
-  .nav__button {
+  .nav {
+    margin-bottom: 50px;
+  }
+  .menuMobile__button {
     display: inline-block;
   }
   .menu {

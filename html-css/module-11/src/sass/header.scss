@@ -57,9 +57,6 @@
     -webkit-animation: Logos 0.7s linear;
     animation: Logos 0.7s linear;
   }
-  &__checkBox {
-    display: none;
-  }
 }
 
 .menu {
@@ -94,16 +91,13 @@
   }
 }
 .menuMobile {
-  z-index: 1;
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  flex-wrap: wrap;
-  top: 0;
-  right: 0;
-  min-width: 150px;
-  background-color: $bggc1;
-  margin: 10px -30px;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 9999;
+  &__checkBox {
+    display: none;
+  }
   &__items {
     padding: 10px 20px;
     text-transform: uppercase;
@@ -131,46 +125,54 @@
   &__link:hover svg {
     fill: $bct;
   }
-}
-.nav__button {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  top: 5px;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    margin-bottom: 5px;
-    background: {
-      color: #ffffff;
-    }
-    transform: translate(0, 0) rotate(0);
-    transition: transform 0.1s linear;
+  &_menu {
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 0;
+    right: 0;
+    min-width: 150px;
+    background-color: $bggc1;
+    margin: 10px -30px;
   }
-  &:hover span {
-    background-color: $bct;
-  }
-}
-.nav__checkBox:checked ~ {
-  .nav__button span {
-    &:nth-child(1) {
-      transform: translate(0, 100%) rotate(45deg);
-    }
-    &:nth-child(2) {
-      display: none;
-    }
-    &:nth-child(3) {
-      transform: translate(0, -100%) rotate(-45deg);
+  &__button {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    span {
+      display: block;
+      width: 35px;
+      height: 5px;
+      margin-bottom: 5px;
+      background: {
+        color: $bct;
+      }
+      transform: translate(0, 0) rotate(0);
+      transition: transform 0.1s linear;
     }
   }
-  .menuMobile {
-    display: flex;
+  &__checkBox:checked ~ {
+    .menuMobile__button span {
+      &:nth-child(1) {
+        transform: translate(0, 100%) rotate(45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: translate(0, -100%) rotate(-45deg);
+      }
+    }
+    .menuMobile_menu {
+      display: flex;
+    }
   }
 }
 .gtn-l {
