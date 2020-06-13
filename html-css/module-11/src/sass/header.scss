@@ -1,10 +1,3 @@
-.btn {
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 9px 30px;
-  @include fz-lh(14px, 18px);
-}
-
 .top {
   padding: 38px 0 230px;
   margin-bottom: 50px;
@@ -98,37 +91,39 @@
   &__checkBox {
     display: none;
   }
-  &__items {
+  &__link {
+    display: flex;
     padding: 10px 20px;
     text-transform: uppercase;
-    text-align: left;
-  }
-  &__items:last-child {
-    margin: 0;
-  }
-  &__link {
-    padding: 5px 0px;
     color: #ffffff;
+    text-align: left;
     @include fz-lh(14px);
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
-  }
-  &__link:hover {
-    color: $bct;
+    &:last-child {
+      margin: 0;
+    }
+    &:hover {
+      background-color: $bct;
+    }
+    & svg {
+      margin-right: 10px;
+    }
   }
   &__linkIcon {
     width: 18px;
     height: 18px;
     fill: #ffffff;
   }
-  &__link:hover svg {
-    fill: $bct;
-  }
-  &_menu {
+  &__menu {
     z-index: 1;
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     top: 0;
     right: 0;
@@ -142,8 +137,15 @@
     right: 0;
     top: 5px;
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
     span {
@@ -154,23 +156,35 @@
       background: {
         color: $bct;
       }
+      -webkit-transform: translate(0, 0) rotate(0);
+      -ms-transform: translate(0, 0) rotate(0);
       transform: translate(0, 0) rotate(0);
+      -webkit-transition: -webkit-transform 0.1s linear;
+      transition: -webkit-transform 0.1s linear;
+      -o-transition: transform 0.1s linear;
       transition: transform 0.1s linear;
+      transition: transform 0.1s linear, -webkit-transform 0.1s linear;
     }
   }
   &__checkBox:checked ~ {
     .menuMobile__button span {
       &:nth-child(1) {
+        -webkit-transform: translate(0, 100%) rotate(45deg);
+        -ms-transform: translate(0, 100%) rotate(45deg);
         transform: translate(0, 100%) rotate(45deg);
       }
       &:nth-child(2) {
         display: none;
       }
       &:nth-child(3) {
+        -webkit-transform: translate(0, -100%) rotate(-45deg);
+        -ms-transform: translate(0, -100%) rotate(-45deg);
         transform: translate(0, -100%) rotate(-45deg);
       }
     }
-    .menuMobile_menu {
+    .menuMobile__menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
   }

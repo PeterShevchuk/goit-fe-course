@@ -10,7 +10,7 @@
     margin-bottom: 50px;
   }
   .menuMobile__button {
-    display: inline-block;
+    display: block;
   }
   .menu {
     display: none;
@@ -26,6 +26,9 @@
     margin-bottom: 90px;
   }
   .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     &__list {
       margin: 0 auto;
@@ -45,6 +48,9 @@
   }
   .footer {
     & .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
     }
     & .form {

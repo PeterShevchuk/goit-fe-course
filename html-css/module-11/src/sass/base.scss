@@ -40,3 +40,10 @@ body {
 .section {
   margin-bottom: 90px;
 }
+
+.btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 9px 30px;
+  @include fz-lh(14px, 18px);
+}
