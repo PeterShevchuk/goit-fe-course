@@ -83,6 +83,7 @@
   flex-wrap: wrap;
   &__list {
     position: relative;
+    margin: 0 auto;
   }
   &__item {
     @extend %df;
