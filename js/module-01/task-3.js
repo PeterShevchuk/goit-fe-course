@@ -1,3 +1,5 @@
+'use strict';
+
 const ADMIN_PASSWORD = '123';
 let message;
 
