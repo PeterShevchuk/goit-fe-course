@@ -2,15 +2,15 @@ const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 let message;
 
 const isLoginValid = function (login) {
-    login = login.length;
-    if (login >= 4 && login <= 16) {return false;} else {return true}
-  // твій код
+    let valid = true;
+    if (login.length >= 4 && login.length <= 16) {valid = false;}
+    return valid;
 };
 
 const isLoginUnique = function (allLogins, login) {
-
-    if (allLogins.indexOf(login) !== -1) {return true} else {return false;}
-  // твій код
+    let valid = false;
+    if (allLogins.indexOf(login) !== -1) {valid = true}
+    return valid;
 };
 
 const addLogin = function (allLogins, login) {
@@ -25,10 +25,6 @@ const addLogin = function (allLogins, login) {
         logins.push(login);
         message = 'Логін успішно доданий!';
     }
-
-    
-
-
     return message;
 };
 
