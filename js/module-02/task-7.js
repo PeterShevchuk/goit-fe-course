@@ -8,9 +8,7 @@ const isLoginValid = function (login) {
 };
 
 const isLoginUnique = function (allLogins, login) {
-    let valid = false;
-    if (allLogins.indexOf(login) !== -1) {valid = true}
-    return valid;
+    return allLogins.includes(login);
 };
 
 const addLogin = function (allLogins, login) {
