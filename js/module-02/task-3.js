@@ -9,7 +9,7 @@ const findLongestWord = function (string) {
       longStr = strSplit[i];
   }
 }
-    let message = `Най довше слово: ${longStr}, його довжина: ${longestWord} символів.`; 
+    let message = `В реченні "${string}", найдовше слово: ${longStr}, його довжина: ${longestWord} символів.`; 
 
     return message;
 };
