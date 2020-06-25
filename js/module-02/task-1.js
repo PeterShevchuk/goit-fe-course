@@ -1,8 +1,15 @@
 const logItems = function (array) {
     let len = array.length;
 
-    for (let i = 0; i < len; i++) {
-        console.log(i+' - '+array[i])
+    // let i = 0;
+    // for (const arrayOf of array) {
+    //     i += 1;
+    //     console.log(`${i} - ${arrayOf}`);
+    // }
+
+
+    for (let i = 0; i < len; i += 1) {
+        console.log(`${i+1} - ${array[i]}`);
     }
   };
 

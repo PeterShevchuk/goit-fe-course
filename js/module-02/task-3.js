@@ -1,15 +1,23 @@
 const findLongestWord = function (string) {
     let strSplit = string.split(' ');
-    let longestWord = 0;
-    let longStr;
+    // let longestWord = 0;
+    let longStr = strSplit[0];
 
-    for(var i = 0; i < strSplit[i].length; i++){
-      if(strSplit[i].length > longestWord){ 
-      longestWord = strSplit[i].length;
-      longStr = strSplit[i];
-  }
-}
-    let message = `В реченні "${string}", найдовше слово: ${longStr}, його довжина: ${longestWord} символів.`; 
+    for (const strVal of strSplit) {
+      if (strVal.length > longStr.length) {
+        // longestWord = strVal.length;
+        longStr = strVal;
+      }
+    }
+
+
+//     for(var i = 0; i < strSplit[i].length; i+=1){
+//       if(strSplit[i].length > longestWord) { 
+//       longestWord = strSplit[i].length;
+//       longStr = strSplit[i];
+//   }
+// }
+    let message = `В реченні "${string}", найдовше слово: ${longStr}.`; 
 
     return message;
 };
