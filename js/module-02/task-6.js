@@ -4,14 +4,18 @@ let total = 0;
 let inputNumber;
 let numbersTotal = 0;
 
+const total = function (params) {
+    for(let i = 0; i < params.length; i++){
+        numbersTotal += params[i];
+    }
+    return numbersTotal;
+};
+
 for (let i = 0; i < 100000000; i++) {
     input = prompt('Введіть число:');
     inputNumber = Number(input);
     if (input === null) {
-        for(let i = 0; i < numbers.length; i++){
-            numbersTotal += numbers[i];
-        }
-        console.log('Загальна сума чисел дорівнює: '+numbersTotal);
+        console.log(total(numbers)); 
         break;
     } else if (Boolean(inputNumber) === false) {
         alert('Було введено не число, попробуйте ще раз');
@@ -19,3 +23,4 @@ for (let i = 0; i < 100000000; i++) {
         numbers.push(inputNumber);
     }
 }
+

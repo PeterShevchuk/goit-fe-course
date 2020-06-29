@@ -1,27 +1,23 @@
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 let message;
 
-const isLoginValid = function (login) {
-    return login.length >= 4 && login.length <= 16? false : true;
-};
+const isLoginValid = (login) => {let len = login.length; return len >= 4 && len <= 16? false : true;}
 
-const isLoginUnique = function (allLogins, login) {
-    return allLogins.includes(login);
-};
+const isLoginUnique = (allLogins, login) => allLogins.includes(login);
 
 const addLogin = function (allLogins, login) {
     let loginValid = isLoginValid(login);
-    let isLogin = isLoginUnique(allLogins, login);
-
     if (loginValid === true) {
-        message = 'Помилка! Логін повинен бути від 4 до 16 символів';
-    } else if (isLogin === true) {
-        message = 'Такий логін вже використовується!';
-    } else  {
-        logins.push(login);
-        message = 'Логін успішно доданий!';
+        return 'Помилка! Логін повинен бути від 4 до 16 символів';
+    } 
+
+    let isLogin = isLoginUnique(allLogins, login);
+    if (isLogin === true) {
+        return 'Такий логін вже використовується!';
     }
-    return message;
+     
+    logins.push(login);
+    return 'Логін успішно доданий!';
 };
 
 /*
