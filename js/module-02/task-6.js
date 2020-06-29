@@ -1,6 +1,5 @@
 let input;
 const numbers = [];
-let total = 0;
 let inputNumber;
 let numbersTotal = 0;
 
