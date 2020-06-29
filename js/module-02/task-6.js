@@ -1,5 +1,5 @@
+const numbers = []; 
 let input;
-const numbers = [];
 let inputNumber;
 let numbersTotal = 0;
 
