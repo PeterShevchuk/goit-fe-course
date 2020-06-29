@@ -1,5 +1,4 @@
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
-let message;
 
 const isLoginValid = (login) => {let len = login.length; return len >= 4 && len <= 16? false : true;}
 
