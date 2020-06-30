@@ -1,3 +1,5 @@
+'use strict';
+
 const countTotalSalary = function (employees) {
   let objVal = Object.values(employees);
   let objKey = Object.keys(employees);

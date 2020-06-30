@@ -1,3 +1,6 @@
+'use strict';
+
+
 const findBestEmployee = function (employees) {
   let objVal = Object.values(employees);
   let objKey = Object.keys(employees);
