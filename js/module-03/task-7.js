@@ -29,7 +29,6 @@ const Transaction = {
             transType: type,
             transAm: amount,
           }
-
         this.transactions.push(transPush);
         return transPush;
     },
@@ -40,12 +39,7 @@ const Transaction = {
      * Викликає createTransaction для створення об'єкта транзакції
      * після чого додає його в історію транзакцій
      */
-    deposit(amount) {
-        this.createTransaction(amount, Transaction.DEPOSIT);
-        this.balance += amount;
-    },
-
-    
+    deposit(amount) {this.createTransaction(amount, Transaction.DEPOSIT);this.balance += amount;},
   
     /*
      * Метод відповідає за зняття суми з балансу.
@@ -68,18 +62,12 @@ const Transaction = {
     /*
      * Метод повертає поточний баланс
      */
-    getBalance() {
-        return `На вашому рахунку: ${this.balance} UAH.`;
-    },
+    getBalance() {return `На вашому рахунку: ${this.balance} UAH.`},
   
     /*
      * Метод шукає і повертає об'єкт транзакції по id
      */
-    getTransactionDetails(id) {
-        return this.transactions[id];
-
-    },
-
+    getTransactionDetails(id) {return this.transactions[id]},
   
     /*
      * Метод повертає кількість коштів
@@ -87,7 +75,7 @@ const Transaction = {
      */
     getTransactionTotal(type) {
         let message = '';
-        for (let i = 0; i < this.transactions.length; i+=1) {
+        for (const i in this.transactions) {
             let transID = this.transactions[i];
              if (transID.transType === type) { message = `${message}${transID.transType}: ${transID.transAm}, `}
         }
@@ -95,17 +83,17 @@ const Transaction = {
     },
   };
 
-//   account.deposit(50);
-//   account.withdraw(10);
-//   account.deposit(50000);
-//   account.withdraw(1000);
-//   account.deposit(123141420);
-//   account.deposit(3000);
-//   account.withdraw(1000);
+  account.deposit(50);
+  account.withdraw(10);
+  account.deposit(50000);
+  account.withdraw(1000);
+  account.deposit(123141420);
+  account.deposit(3000);
+  account.withdraw(1000);
 
 
 
-//   console.log(account.transactions);
-//   console.log(account.getBalance());
-//   console.log(account.getTransactionDetails(3));
-//   console.log(account.getTransactionTotal(Transaction.DEPOSIT));
+  console.log(account.transactions);
+  console.log(account.getBalance());
+  console.log(account.getTransactionDetails(3));
+  console.log(account.getTransactionTotal(Transaction.DEPOSIT));

@@ -1,6 +1,6 @@
 'use strict';
 
-const countTotalSalary = function (employees) {
+const countTotalSalary = (employees) => {
   let objVal = Object.values(employees);
   let objKey = Object.keys(employees);
   let totalSum = 0;

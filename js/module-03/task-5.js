@@ -7,10 +7,10 @@ const products = [
     { name: 'Захоплення', price: 1200, quantity: 2 },
 ];
 
-const getAllPropValues = function (arr, prop) {
+const getAllPropValues = (arr, prop) => {
     let message = [];
-    for (let i = 0; i < arr.length; i+=1) {
-        if (Boolean(arr[i][prop]) === true) {message.push(arr[i][prop])}
+    for (const i in arr) {
+        Boolean(arr[i][prop]) === true? message.push(arr[i][prop]) : null
     }
     
     return message;

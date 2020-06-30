@@ -1,8 +1,7 @@
 'use strict';
 
-const countProps = function (obj) {
-  return Object.keys(obj).length;
-};
+const countProps = (obj) => {return Object.keys(obj).length}
+
 
 /*
  * Викличи функції для перевірки працездатності твоєї реалізації.

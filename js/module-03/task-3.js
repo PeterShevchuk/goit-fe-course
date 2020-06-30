@@ -1,7 +1,7 @@
 'use strict';
 
 
-const findBestEmployee = function (employees) {
+const findBestEmployee = (employees) => {
   let objVal = Object.values(employees);
   let objKey = Object.keys(employees);
   let maxNumber = objVal[0];
