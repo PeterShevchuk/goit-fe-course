@@ -77,7 +77,7 @@ const Transaction = {
         let message = '';
         for (const i in this.transactions) {
             let transID = this.transactions[i];
-             if (transID.transType === type) { message = `${message}${transID.transType}: ${transID.transAm}, `}
+             transID.transType === type? message = `${message}${transID.transType}: ${transID.transAm}, ` : null
         }
         return message;
     },
