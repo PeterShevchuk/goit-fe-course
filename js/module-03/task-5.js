@@ -9,10 +9,9 @@ const products = [
 
 const getAllPropValues = (arr, prop) => {
     let message = [];
-    for (const i in arr) {
-        Boolean(arr[i][prop]) === true? message.push(arr[i][prop]) : null
+    for (const item in arr) {
+        Boolean(arr[item][prop])? message.push(arr[item][prop]) : null
     }
-    
     return message;
 }
   
