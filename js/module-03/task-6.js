@@ -9,8 +9,8 @@ const products = [
   
   const calculateTotalPrice = (allProdcuts, productName) => {
     let totalPrice = 0;
-    for (const i in allProdcuts) {
-        const {name, price, quantity} = allProdcuts[i];
+    for (const item in allProdcuts) {
+        const {name, price, quantity} = allProdcuts[item];
         name === productName? totalPrice=price*quantity : null
     } 
     return totalPrice;
