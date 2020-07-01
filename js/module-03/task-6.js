@@ -8,12 +8,11 @@ const products = [
   ];
   
   const calculateTotalPrice = (allProdcuts, productName) => {
-    let totalPrice = 0;
     for (const item in allProdcuts) {
         const {name, price, quantity} = allProdcuts[item];
-        name === productName? totalPrice=price*quantity : null
+        if (name === productName) {return price*quantity}
     } 
-    return totalPrice;
+
   };
   
   /*
