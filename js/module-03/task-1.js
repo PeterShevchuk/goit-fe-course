@@ -14,5 +14,5 @@ const user = {
 
 
   for (let userVal in user) {
-    console.log(`${userVal}:${user[userVal]}`);
+    console.log(`${userVal} : ${user[userVal]}`);
   }

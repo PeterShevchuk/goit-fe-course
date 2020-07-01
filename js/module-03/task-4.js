@@ -6,7 +6,6 @@ const countTotalSalary = (employees) => {
   let totalSum = 0;
 
   for (let i = 0; i < objVal.length; i+=1) {
-    console.log(`${objKey[i]}: ${objVal[i]}`);
     totalSum +=objVal[i];
   }
   
