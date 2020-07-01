@@ -2,13 +2,11 @@
 
 const countTotalSalary = (employees) => {
   let objVal = Object.values(employees);
-  let objLen = objVal.length
   let totalSum = 0;
 
-  for (let i = 0; i < objLen; i+=1) {
-    totalSum +=objVal[i];
+  for (const values of objVal) {
+    totalSum +=values;
   }
-  
 
   return totalSum !== 0? `Загальна сума зарплат: ${totalSum}` : `Немає даних`;
 };
