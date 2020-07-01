@@ -2,10 +2,10 @@
 
 const countTotalSalary = (employees) => {
   let objVal = Object.values(employees);
-  let objKey = Object.keys(employees);
+  let objLen = objVal.length
   let totalSum = 0;
 
-  for (let i = 0; i < objVal.length; i+=1) {
+  for (let i = 0; i < objLen; i+=1) {
     totalSum +=objVal[i];
   }
   
