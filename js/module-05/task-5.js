@@ -7,7 +7,7 @@ class Car {
      */
 
     static getSpecs(cars) {
-        console.log(`maxSpeed: ${cars.maxSpeed}, speed: ${cars.speed}, isOn: ${cars.isOn}, distance: ${cars.distance}, price: ${cars.price}`);
+        return console.log(`maxSpeed: ${cars._maxSpeed}, speed: ${cars._speed}, isOn: ${cars._isOn}, distance: ${cars._distance}, price: ${cars._price}`);
       }
     /*
      * Конструктор отримує об'єкт налаштувань.
@@ -20,11 +20,11 @@ class Car {
      *  distance - загальний кілометраж, спочатку 0
      */
     constructor(arr) {
-        this.speed = arr.speed? arr.speed: 0;
-        this.price = arr.price;
-        this.maxSpeed = arr.maxSpeed;
-        this.isOn = arr.isOn? arr.isOn : false;
-        this.distance = arr.distance? arr.distance : 0;
+        this._speed = 0;
+        this._price = arr.price;
+        this._maxSpeed = arr.maxSpeed;
+        this._isOn = false;
+        this._distance = 0;
 
     }
   
@@ -33,16 +33,17 @@ class Car {
      * який буде працювати з властивістю ціни автомобіля.
      */
   
-    getter() { console.log(this.price) }
+
+    get price() {return this._price;}
     
-    setter(value) { value>=0? this.price = value : console.log('Ціна нижча 0')}
+    set price(value) {value>=0? this._price = value : console.log('Ціна нижча 0')}
 
     /*
      * Додай код для того, щоб завести автомобіль
      * Записує у властивість isOn значення true
      */
     turnOn() {
-        this.isOn = true;
+        this._isOn = true;
     }
   
     /*
@@ -51,8 +52,8 @@ class Car {
      * і скидає поточну швидкість в 0
      */
     turnOff() {
-        this.isOn = false;
-        this.speed = 0;
+        this._isOn = false;
+        this._speed = 0;
     }
 
   
@@ -61,20 +62,20 @@ class Car {
      * за умови, що результуюча швидкість
      * не більше, ніж значення властивості maxSpeed
      */
-    accelerate(value) {value <= this.maxSpeed? this.speed += value : console.log(`Значення більше, ніж значення властивості maxSpeed: ${this.maxSpeed}`)}
+    accelerate(value) {value <= this._maxSpeed? this._speed += value : console.log(`Значення більше, ніж значення властивості maxSpeed: ${this._maxSpeed}`)}
   
     /*
      * Забирає від властивості speed отримане значення,
      * за умови, що результуюча швидкість не менше нуля
      */
-    decelerate(value) {this.speed-value >= 0? this.speed -= value : console.log(`Результуюча швидкість менше нуля`)}
+    decelerate(value) {this._speed-value >= 0? this._speed -= value : console.log(`Результуюча швидкість менше нуля`)}
   
     /*
      * Додає в поле distance кілометраж (hours * speed),
      * але тільки в тому випадку, якщо машина заведена!
      */
     drive(hours) {
-        this.isOn? this.distance = hours*this.speed : console.log(`Машина не заведена`)
+        this._isOn? this._distance = hours*this._speed : console.log(`Машина не заведена`)
     }
   }
   
