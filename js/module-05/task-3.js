@@ -1,21 +1,20 @@
-function Storage(arr) {
+class Storage { 
+  constructor(arr) {
     this.items = arr;
-    this.addItem = function (item) {
-        this.items.push(item);
-    },
-    this.removeItem = function (item) {
-        this.indexDel = this.items.indexOf(item);
-        if (this.indexDel > -1) {
-            this.items.splice(this.indexDel, 1);
-          }
-    },
-    this.getItems = function () {
-		return this.items;
+  }
+  addItem(item) {
+    this.items.push(item);
+  }
+  removeItem(item) {
+    this.indexDel = this.items.indexOf(item);
+    if (this.indexDel > -1) {
+        this.items.splice(this.indexDel, 1);
+      }
     }
+  getItems() {
+    return this.items;
+  }
 }
-
-
-
 
 const storage = new Storage([
     'Нанітоіди',

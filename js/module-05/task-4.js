@@ -1,17 +1,19 @@
-function StringBuilder(string) {
-    this.value = string;
-    this.getter = function () {
+class StringBuilder { 
+    constructor(string) {
+        this.value = string;
+    }
+    getter() {
         return this.value;
-    },
-    this.append = function (item) {
+    }
+    append(item) {
         this.value += item;
-    },
-    this.prepend = function (item) {
+    }
+    prepend(item) {
 		this.value = item+this.value;
-    },
-    this.pad = function (item) {
+    }
+    pad(item) {
 		this.value = item+this.value+item;
-    }    
+    }  
 }
 
 

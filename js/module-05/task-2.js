@@ -1,8 +1,10 @@
-function User(arr) {
-    this.name = arr.name,
-    this.age = arr.age,
-    this.followers = arr.followers,
-    this.getInfo = function() {
+class User { 
+    constructor(arr) {
+        this.name = arr.name,
+        this.age = arr.age,
+        this.followers = arr.followers
+    }
+    getInfo = function() {
         return console.log(`User ${this.name} is ${this.age} years old and has ${this.followers}`);
     }
 }
