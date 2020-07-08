@@ -3,7 +3,7 @@ import users from "./users.js";
 
 
 const getNamesSortedByFriendsCount = users => {
-    return users.sort((user1, user2) => {return user1.age - user2.age}).map(user => `${user.name} - ${user.age}`)
+    return users.sort((user1, user2) => {return user1.friends.length - user2.friends.length}).map(user => user.name)
   };
   
   console.log(getNamesSortedByFriendsCount(users));
