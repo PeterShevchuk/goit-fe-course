@@ -2,7 +2,7 @@ class StringBuilder {
     constructor(string) {
         this._value = string;
     }
-    getter() {
+    get value() {
         return this._value;
     }
     append(item) {
