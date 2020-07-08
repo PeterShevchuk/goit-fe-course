@@ -13,7 +13,7 @@ class StringBuilder {
     }
     pad(item) {
 		this._value = item+this._value+item;
-    }  
+    }
 }
 
 
