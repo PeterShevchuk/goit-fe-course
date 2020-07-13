@@ -53,8 +53,8 @@ const gallery = {
   },
   modalPrevNext(item) {
     this.modalHide();
-    if (item ==='prev') {this.modalShow(this.infoPrevNext.previousSibling? this.infoPrevNext.previousSibling.querySelector("a").querySelector("img") : this.modalHide())}
-    if (item ==='next') {this.modalShow(this.infoPrevNext.nextSibling? this.infoPrevNext.nextSibling.querySelector("a").querySelector("img") : this.modalHide())}
+    if (item ==='prev') {this.infoPrevNext.previousSibling? this.modalShow(this.infoPrevNext.previousSibling.querySelector("a").querySelector("img")) : this.modalHide()}
+    if (item ==='next') {this.infoPrevNext.nextSibling? this.modalShow(this.infoPrevNext.nextSibling.querySelector("a").querySelector("img")) : this.modalHide()}
   },
 };
 
