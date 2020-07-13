@@ -45,6 +45,7 @@ const gallery = {
   },
   clearWindow() {
     this.modalImg.setAttribute("src", "");
+    this.modalImg.setAttribute("alt", "");
   },
   keyDown(event) {
       let code = event.code;
