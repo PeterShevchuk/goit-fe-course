@@ -16,7 +16,7 @@ const gallery = {
     link.classList.add("gallery__link");
     img.classList.add("gallery__image");
 
-    link.setAttribute("href", orig);
+    // link.setAttribute("href", orig);
     img.setAttribute("src", prev);
     img.setAttribute("data-source", orig);
     img.setAttribute("alt", desc);
