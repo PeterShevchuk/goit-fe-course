@@ -1,4 +1,4 @@
-document.querySelector(".font-size").style.display = "block";
+document.querySelector(".task7").style.display = "block";
 
 const input = document.querySelector("#font-size-control");
 const inputText = document.querySelector("#text");

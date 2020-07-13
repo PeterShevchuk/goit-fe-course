@@ -1,13 +1,13 @@
-document.querySelector('#counter').style.display = 'block';
+document.querySelector(".task4").style.display = "block";
 
-let value = document.querySelector('#value');
+let value = document.querySelector("#value");
 const btnAdd = document.querySelector('[data-action="increment"]');
 const btnRemove = document.querySelector('[data-action="decrement"]');
 
 let numb = Number(value.textContent);
 
-btnAdd.addEventListener('click', increment);
-btnRemove.addEventListener('click', decrement);
+btnAdd.addEventListener("click", increment);
+btnRemove.addEventListener("click", decrement);
 
 function increment(event) {
   numb += 1;

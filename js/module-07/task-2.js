@@ -1,23 +1,22 @@
-let list = document.querySelector('#ingredients')
-list.style.display = 'block';
+document.querySelector(".task2").style.display = "block";
+
+let list = document.querySelector("#ingredients");
 
 const ingredients = [
-  'Картопля',
-  'Гриби',
-  'Часник',
-  'Помідори',
-  'Зелень',
-  'Приправи',
+  "Картопля",
+  "Гриби",
+  "Часник",
+  "Помідори",
+  "Зелень",
+  "Приправи",
 ];
 
 function createLi(text) {
-
-  let li = document.createElement('li')
+  let li = document.createElement("li");
   li.textContent = text;
 
-  return li
-  
+  return li;
 }
 
-let menuList = ingredients.map(item => createLi(item))
+let menuList = ingredients.map((item) => createLi(item));
 list.append(...menuList);

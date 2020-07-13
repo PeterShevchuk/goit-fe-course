@@ -9,7 +9,7 @@
   <body>
     <script src="../stric.js" type="module"></script>
 
-    <ul id="categories" class="categories">
+    <ul id="categories" class="task1">
       <li class="item">
         <h2>Тварини</h2>
 
@@ -42,22 +42,22 @@
       </li>
     </ul>
 
-    <ul id="ingredients" class="ingredients"></ul>
+    <ul id="ingredients" class="task2"></ul>
 
-    <ul id="gallery" class="gallery"></ul>
+    <ul id="gallery" class="task3"></ul>
 
-    <div id="counter" class="counter">
+    <div id="counter" class="task4">
       <button type="button" data-action="decrement">-1</button>
       <span id="value">0</span>
       <button type="button" data-action="increment">+1</button>
     </div>
 
-    <div class="person" id="person">
+    <div class="task5">
       <input type="text" placeholder="Ваше ім'я?" id="name-input" />
       <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
     </div>
 
-    <div>
+    <div class="task6">
       <input
         type="text"
         id="validation-input"
@@ -66,10 +66,20 @@
         placeholder="Введи 6 символів"
       />
     </div>
-    <div class="font-size">
-      <input id="font-size-control" type="range" min="1" max="72" value="14" />
+    <div class="task7">
+      <input id="font-size-control" type="range" min="6" max="144" value="14" />
       <br />
       <span id="text">Абракадабра!</span>
+    </div>
+
+    <div class="task8">
+      <div id="controls">
+        <input type="number" min="0" max="100" step="1" />
+        <button type="button" data-action="render">Створити</button>
+        <button type="button" data-action="destroy">Очистити</button>
+      </div>
+
+      <div id="boxes"></div>
     </div>
 
     <!-- <script src="./task-1.js" type="module"></script> -->
@@ -78,7 +88,7 @@
     <!-- <script src="./task-4.js" type="module"></script> -->
     <!-- <script src="./task-5.js" type="module"></script> -->
     <!-- <script src="./task-6.js" type="module"></script> -->
-    <script src="./task-7.js" type="module"></script>
-    <!-- <script src="./task-8.js" type="module"></script> -->
+    <!-- <script src="./task-7.js" type="module"></script> -->
+    <script src="./task-8.js" type="module"></script>
   </body>
 </html>

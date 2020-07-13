@@ -6,24 +6,27 @@ body {
   margin: 0;
   padding: 0;
 }
-.font-size,
-.validation-input,
-.ingredients,
-.counter,
-.gallery,
-.categories,
-.person {
+.task1,
+.task2,
+.task3,
+.task4,
+.task5,
+.task6,
+.task7,
+.task8 {
   display: none;
 }
 li {
   list-style: none;
 }
-.gallery {
+
+/* ============= task 3 ============ */
+.task3 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.gallery li {
+.task3 li {
   margin: 10px 0;
 }
 .images {
@@ -34,6 +37,7 @@ li {
 .images:hover {
   transform: scale(1.2);
 }
+/* ============= task 7 ============ */
 
 .validation-input {
   border: 3px solid #bdbdbd;
@@ -45,4 +49,13 @@ li {
 
 .validation-input.invalid {
   border-color: #f44336;
+}
+
+/* ============= task 8 ============ */
+
+#boxes div {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  /* color: #ffffff; */
 }
