@@ -1,17 +1,22 @@
-let list = document.querySelector('#counter');
-list.style.display = 'block';
-let counterValue = document.querySelector('#value').textContent;
-let ev = document.querySelectorAll('button')
+document.querySelector('#counter').style.display = 'block';
 
-ev.addEventListener('click', function (event) {
-  		console.log(event);
-  		// event.preventDefault(); // Отменить повдение по умолчанию
-  	});
+let value = document.querySelector('#value');
+const btnAdd = document.querySelector('[data-action="increment"]');
+const btnRemove = document.querySelector('[data-action="decrement"]');
 
+let numb = Number(value.textContent);
 
-function onClick() {
-  console.log(ev)
-  
+btnAdd.addEventListener('click', increment);
+btnRemove.addEventListener('click', decrement);
+
+function increment(event) {
+  numb += 1;
+  value.textContent = numb;
 }
 
-onClick();
+function decrement(event) {
+  if (numb > 0) {
+    numb -= 1;
+    value.textContent = numb;
+  }
+}

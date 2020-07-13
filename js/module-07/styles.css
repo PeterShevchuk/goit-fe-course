@@ -1,31 +1,48 @@
 body {
-    max-width: 1110px;
-    margin: 0 auto;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-ul, .counter {
-    display: none;
+.font-size,
+.validation-input,
+.ingredients,
+.counter,
+.gallery,
+.categories,
+.person {
+  display: none;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 .gallery {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .gallery li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 .images {
-    width: 300px;
-    height: auto;
-    transition: all .2s linear;
-    
+  width: 300px;
+  height: auto;
+  transition: all 0.2s linear;
 }
 .images:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+.validation-input.valid {
+  border-color: #4caf50;
+}
+
+.validation-input.invalid {
+  border-color: #f44336;
 }
