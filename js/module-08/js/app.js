@@ -16,6 +16,7 @@ const gallery = {
     link.classList.add("gallery__link");
     img.classList.add("gallery__image");
 
+    link.setAttribute("href", orig);
     img.setAttribute("src", prev);
     img.setAttribute("data-source", orig);
     img.setAttribute("alt", desc);
@@ -30,8 +31,8 @@ const gallery = {
       this.addImageGallery(obj.preview, obj.original, obj.description)
     );
   },
-  setImageInGallery(list) {
-    list.append(...this.getImagesList(imgArray));
+  setImageInGallery(array, list) {
+    list.append(...this.getImagesList(array));
   },
   modalShow(item) {
     this.modalImg.setAttribute("src", item.getAttribute("data-source"));
@@ -53,12 +54,12 @@ const gallery = {
   },
   modalPrevNext(item) {
     this.modalHide();
-    if (item ==='prev') {this.infoPrevNext.previousSibling? this.modalShow(this.infoPrevNext.previousSibling.querySelector("a").querySelector("img")) : this.modalHide()}
-    if (item ==='next') {this.infoPrevNext.nextSibling? this.modalShow(this.infoPrevNext.nextSibling.querySelector("a").querySelector("img")) : this.modalHide()}
+    if (item ==='prev') {this.infoPrevNext.previousSibling? this.modalShow(this.infoPrevNext.previousSibling.querySelector("a").querySelector("img")) : null}
+    if (item ==='next') {this.infoPrevNext.nextSibling? this.modalShow(this.infoPrevNext.nextSibling.querySelector("a").querySelector("img")) : null}
   },
 };
 
-gallery.setImageInGallery(gallery.listImg);
+gallery.setImageInGallery(imgArray, gallery.listImg);
 
 gallery.listImg.addEventListener("click", (e) => {
   gallery.modalShow(e.target);

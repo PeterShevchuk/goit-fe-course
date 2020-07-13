@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home word 2 task 1-7</title>
-</head>
-<body>
+    <style>
+      #parent,
+      #child,
+      #inner-child {
+        margin: 1rem;
+        padding: 40px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 50%;
+      }
+
+      #parent {
+        background-color: rgb(19, 13, 31);
+      }
+
+      #child {
+        background-color: rgb(138, 149, 167);
+      }
+
+      #inner-child {
+        background-color: #f7fcfb;
+        color: rgb(22, 26, 26);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      PARENT
+      <div id="child">
+        CHILD
+        <div id="inner-child">INNER-CHILD</div>
+      </div>
+    </div>
+
     <script src="../stric.js" type="module"></script>
-    
+
     <script src="./app.js" type="module"></script>
-</body>
+  </body>
 </html>
