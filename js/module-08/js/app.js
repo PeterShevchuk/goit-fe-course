@@ -5,7 +5,8 @@ const gallery = {
   listImg: document.querySelector("ul.js-gallery"),
   modalWindowClose: document.querySelector(".js-lightbox"),
   modalWindow: document.querySelector(".lightbox"),
-  infoPrevNext: '',
+  infoPrevNext: {}, // info for button prev or next
+  button: {prev: 'ArrowLeft', next: 'ArrowRight', esc: 'Escape'},
 
   addImageGallery(prev, orig, desc) {
     let li = document.createElement("li");
@@ -35,9 +36,10 @@ const gallery = {
     list.append(...this.getImagesList(array));
   },
   modalShow(item) {
+    this.clearWindow();
+    this.modalSave(item);
     this.modalImg.setAttribute("src", item.getAttribute("data-source"));
     this.modalWindow.classList.add("is-open");
-    this.infoPrevNext = item.parentNode.parentNode;
   },
   modalHide() {
     this.modalWindow.classList.contains("is-open")? this.modalWindow.classList.remove("is-open") : null
@@ -49,14 +51,16 @@ const gallery = {
   },
   keyDown(event) {
       let code = event.code;
-      code === 'Escape'? this.modalHide() : null
-      code === 'ArrowLeft'? this.modalPrevNext('prev') : null
-      code === 'ArrowRight'? this.modalPrevNext('next') : null
+      code === this.button.esc? this.modalHide() :  null
+      code === this.button.prev || code === this.button.next? this.modalPrevNext(code) : null
   },
   modalPrevNext(item) {
-    this.modalHide();
-    if (item ==='prev') {this.infoPrevNext.previousSibling? this.modalShow(this.infoPrevNext.previousSibling.querySelector("a").querySelector("img")) : null}
-    if (item ==='next') {this.infoPrevNext.nextSibling? this.modalShow(this.infoPrevNext.nextSibling.querySelector("a").querySelector("img")) : null}
+    item === this.button.prev && this.infoPrevNext[item]  || item === this.button.next  && this.infoPrevNext[item]? this.modalShow(this.infoPrevNext[item]) : null
+  },
+  modalSave(item) {
+    item = item.parentNode.parentNode;
+    item.previousSibling? this.infoPrevNext[this.button.prev] = item.previousSibling.querySelector("a").querySelector("img") : null
+    item.nextSibling? this.infoPrevNext[this.button.next] = item.nextSibling.querySelector("a").querySelector("img") : null
   },
 };
 
