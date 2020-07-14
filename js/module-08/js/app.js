@@ -47,7 +47,7 @@ const gallery = {
     this.clearWindow();
     this.modalSave(item); 
     this.modalImg.setAttribute("src", item.getAttribute("data-source"));
-    this.modalWindow.classList.add("is-open");
+    !this.modalWindow.classList.contains("is-open")? this.modalWindow.classList.add("is-open") : null
   },
 
   // Закриття модального вікна
