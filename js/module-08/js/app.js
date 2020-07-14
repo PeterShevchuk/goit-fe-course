@@ -48,6 +48,8 @@ const gallery = {
   clearWindow() {
     this.modalImg.setAttribute("src", "");
     this.modalImg.setAttribute("alt", "");
+    this.infoPrevNext[this.button.prev] = null;
+    this.infoPrevNext[this.button.next] = null;
   },
   keyDown(event) {
       let code = event.code;
@@ -59,8 +61,8 @@ const gallery = {
   },
   modalSave(item) {
     item = item.parentNode.parentNode;
-    item.previousSibling? this.infoPrevNext[this.button.prev] = item.previousSibling.querySelector("a").querySelector("img") : null
-    item.nextSibling? this.infoPrevNext[this.button.next] = item.nextSibling.querySelector("a").querySelector("img") : null
+    this.infoPrevNext[this.button.prev] = item.previousSibling? item.previousSibling.querySelector("a").querySelector("img") : null;
+    this.infoPrevNext[this.button.next] = item.nextSibling? item.nextSibling.querySelector("a").querySelector("img") : null;
   },
 };
 
