@@ -45,16 +45,18 @@ class CountdownTimer {
     this.timerId = setInterval(this.innerTimer, 1000);
   }
   fix(num) {
-    if (Math.sign(num) === -1) {num *= -1}
+    if (Math.sign(num) === -1) {
+      num *= -1;
+    }
     return String(num < 10 && num >= 0 ? "0" + num : num);
   }
 }
 
-const timersAll = document.querySelectorAll('.timer')
+const timersAll = document.querySelectorAll(".timer");
 for (const iterator of timersAll) {
   const timer = new CountdownTimer({
-    selector: '#'+iterator.id,
-    targetDate: new Date(iterator.getAttribute('data')),
+    selector: "#" + iterator.id,
+    targetDate: new Date(iterator.getAttribute("data")),
   });
   timer.startTimer();
 }
