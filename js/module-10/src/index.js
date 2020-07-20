@@ -2,11 +2,6 @@ import './styles.css';
 
 import postsdb from './db/posts.json';
 const postsListRef = document.querySelector('.posts'); 
-// Створюємо галерею постів по одному елементу
-// import toGeneratePost from './templates/newPost.hbs';
-// const newPost = toGeneratePost(postsdb);
-// postsListRef.insertAdjacentHTML('beforeend', newPost);
-// створюємо галерею зі всіма постами одноразово
 import toGenerateAllPosts from './templates/allPosts.hbs';
 function toCreatePostsList(arr) {
     const newPost = arr.map(post => toGenerateAllPosts(post)).join('');
