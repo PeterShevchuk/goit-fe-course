@@ -50,23 +50,11 @@ class CountdownTimer {
   }
 }
 
-// Таймер на збільшення часу
-const timer = new CountdownTimer({
-  selector: "#timer-1",
-  targetDate: new Date("Jul 17, 2019"),
-});
-timer.startTimer();
-
-// Таймер на зменшення часу
-const timer2 = new CountdownTimer({
-  selector: "#timer-2",
-  targetDate: new Date("Jan 1, 2021"),
-});
-timer2.startTimer();
-
-// Таймер на зменшення часу
-const timer3 = new CountdownTimer({
-  selector: "#timer-3",
-  targetDate: new Date("Apr 2, 2021"),
-});
-timer3.startTimer();
+const timersAll = document.querySelectorAll('.timer')
+for (const iterator of timersAll) {
+  const timer = new CountdownTimer({
+    selector: '#'+iterator.id,
+    targetDate: new Date(iterator.getAttribute('data')),
+  });
+  timer.startTimer();
+}
