@@ -1,0 +1,44 @@
+<h2 class="result__name">{{name}} - ({{nativeName}})</h2>
+<div class="result__detals">
+  <div class="result__colum-first">
+    <p class="result__text">Code: {{alpha2Code}}</p>
+    <p class="result__text">Capital: {{capital}}</p>
+    <p class="result__text">Region: {{region}}</p>
+    <p class="result__text">Subregion: {{subregion}}</p>
+    <p class="result__text">Population: {{population}}</p>
+    <p class="result__text">Area: {{area}}</p>
+    <p class="result__text">Timezones:</p>
+    <ul class="result__second-list">
+      {{#each timezones}}
+      <li class="result__second-item">{{this}}</li>
+      {{/each}}
+
+    </ul>
+    <p class="result__text">Currencies:</p>
+    <ul class="result__second-list">
+      {{#each currencies}}
+      <li class="result__second-item">{{name}}</li>
+      <li class="result__second-item">symbol: {{symbol}}</li>
+      <li class="result__second-item">code: {{code}}</li>
+      {{/each}}
+
+    </ul>
+    <p class="result__text">Languages:</p>
+    <ul class="result__second-list">
+      {{#each languages}}
+      <li class="result__second-item">{{this.nativeName}} - ({{this.name}})</li>
+      {{/each}}
+
+    </ul>
+    <p class="result__text">Translations:</p>
+    <ul class="result__second-list">
+      {{#each translations}}
+      <li class="result__second-item">{{this}}</li>
+      {{/each}}
+
+    </ul>
+  </div>
+  <div class="result__colum-second">
+    <img src="{{flag}}" alt="{{name}}" width="490" height="490" />
+  </div>
+</div>
