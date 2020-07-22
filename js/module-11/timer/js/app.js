@@ -45,9 +45,7 @@ class CountdownTimer {
     this.timerId = setInterval(this.innerTimer, 1000);
   }
   fix(num) {
-    if (Math.sign(num) === -1) {
-      num *= -1;
-    }
+    Math.sign(num) === -1 ? (num *= -1) : null;
     return String(num < 10 && num >= 0 ? "0" + num : num);
   }
 }
