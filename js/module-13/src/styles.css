@@ -6,6 +6,7 @@
 
 body {
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -72,6 +73,7 @@ body {
 }
 .stats-item {
   max-height: 20px;
+  text-align: center;
 }
 .material-icons {
   display: flex;

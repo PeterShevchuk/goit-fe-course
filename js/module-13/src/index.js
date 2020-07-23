@@ -14,6 +14,7 @@ import "@pnotify/core/dist/BrightTheme.css";
 import "@pnotify/core/dist/PNotify.css";
 import { alert } from "@pnotify/core";
 
+//modal window
 const basicLightbox = require('basiclightbox');
 
 const myKey = "17613343-1ae46d7f2f6b0249714d12d11";
@@ -35,6 +36,7 @@ class Search {
 
     //others
     this.data = [{}];
+    this.chart = /[0-9\s\+\-\а-я\і\ї\є]|\./;
   }
   getData(e) {
     this.value = this.input.value
@@ -44,19 +46,17 @@ class Search {
     fetch(this.url + this.options)
       .then((response) => response.json())
       .then((data) => this.result(data.hits))
-      .catch((error) => console.log(error));
+      .catch((error) => this.message(error));
   }
   check(value){
-    if (value === '') {this.message('Пусте поле не може бути, потрібно ввести символи!'); this.clearGallery(); return true}
-    if (value === " ") {this.message('Пробіл не може бути, потрібно ввести символи!'); this.clearGallery(); return true}
+    if (this.chart.test(value)) {this.message('Використано заборонені символи! Тільки англійські символи!');this.clearGallery(); return true} else if (value === '') { return true}
     return false;
   }
   result(data) {
-    if (String(data)==='' && this.page>1) {this.message('Більше немає картинок');this.page = 1;return;}
-    if (String(data)==='') { this.message('За вашим запитом не було нічого не знайдено');return;}
+    if (String(data)==='' && this.page>1) {this.message('Більше немає картинок');this.page = 1;return;} else if (String(data)==='') { this.message('За вашим запитом не було нічого не знайдено');return;}
     this.data = this.data.concat(data);
     this.listGallery.insertAdjacentHTML('beforeend', toGenerateListGallery(data));
-    this.loadMoreBtn.style.display = "block";
+    if (data.length>2) {this.loadMoreBtn.style.display = "block";}
   }
   loadMore(){
     this.page = this.page+1;
@@ -64,7 +64,7 @@ class Search {
   }
   modalShow(e){
     this.objImg = this.data.find((item) => item.id === Number(e));
-    basicLightbox.create(`<img class="lightbox__image" src="${this.objImg.largeImageURL}" alt="${this.objImg.tags}" />`, {onClose: () => {this.scroll('hide')}}).show()
+    basicLightbox.create(`<img class="lightbox__image" src="${this.objImg.largeImageURL}" alt="${this.objImg.tags}" />`, {onClose: () => this.scroll('hide')}).show()
     this.scroll('show')
   }
   scroll(value){
@@ -87,8 +87,8 @@ class Search {
       delay: 2500,
       // hide: false,
     });
-    notice.on("pnotify:confirm", () => {});
-    notice.on("pnotify:cancel", () => {});
+    notice.on("pnotify:confirm");
+    notice.on("pnotify:cancel");
   }
   init() {
     this.input.addEventListener("input",  debounce(() => {this.getData();}, 500),);
