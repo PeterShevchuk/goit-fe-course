@@ -37,6 +37,7 @@ class Search {
     //others
     this.data = [{}];
     this.chart = /[0-9\s\+\-\а-я\і\ї\є]|\./;
+    this.messageText = ['Використано заборонені символи! Тільки англійські символи!', 'Більше немає картинок', 'За вашим запитом не було нічого не знайдено', ]
   }
   getData(e) {
     this.value = this.input.value
@@ -49,11 +50,11 @@ class Search {
       .catch((error) => this.message(error));
   }
   check(value){
-    if (this.chart.test(value)) {this.message('Використано заборонені символи! Тільки англійські символи!');this.clearGallery(); return true} else if (value === '') { return true}
+    if (this.chart.test(value)) {this.message(0);this.clearGallery(); return true} else if (value === '') { return true}
     return false;
   }
   result(data) {
-    if (String(data)==='' && this.page>1) {this.message('Більше немає картинок');this.page = 1;return;} else if (String(data)==='') { this.message('За вашим запитом не було нічого не знайдено');return;}
+    if (String(data)==='' && this.page>1) {this.message(1);this.page = 1;return;} else if (String(data)==='') { this.message(2);return;}
     this.data = this.data.concat(data);
     this.listGallery.insertAdjacentHTML('beforeend', toGenerateListGallery(data));
     if (data.length>2) {this.loadMoreBtn.style.display = "block";}
@@ -79,10 +80,10 @@ class Search {
     this.loadMoreBtn.style.display = "none";
     this.data = [{}];
   }
-  message(message, title = "Увага!", type = "error") {
+  message(item, title = "Увага!", type = "error") {
     const notice = alert({
       title: title,
-      text: message,
+      text: this.messageText[item],
       type: type,
       delay: 2500,
       // hide: false,
