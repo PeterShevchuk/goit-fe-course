@@ -93,9 +93,7 @@ class Search {
   }
   init() {
     this.input.addEventListener("input",  debounce(() => {this.getData();}, 500),);
-    this.loadMoreBtn.addEventListener("click", () => {
-      this.loadMore();
-    });
+    this.loadMoreBtn.addEventListener("click", () => {this.loadMore();});
     document.addEventListener("click", function(e) {
       if (e.target.parentNode.classList.value === 'photo-card') {search.modalShow(e.target.parentNode.getAttribute("data-id"));}
     });
